@@ -68,7 +68,7 @@ public class frame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnloginActionPerformed
 
     private void btnsignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsignActionPerformed
-        //belum
+        //belum dibuat
     }//GEN-LAST:event_btnsignActionPerformed
 
     public static void main(String args[]) {
