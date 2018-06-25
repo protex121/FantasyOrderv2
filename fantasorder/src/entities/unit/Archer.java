@@ -5,19 +5,16 @@ import fantasorder.gfx.Assets;
 import java.awt.Graphics;
 
 public class Archer extends Unit{
-
-    private Game game;
-    
     
     public Archer(Game game, float x,float y) {
-        super(x, y, Unit.width_semula, Unit.height_semula);
-        this.game = game;
+        super(game, x, y, Unit.width_semula, Unit.height_semula);
     }
 
     @Override
     public void tick() {
         getInput();
         move();
+        game.getGameCamera().centerOnEntity(this);
     }
     
     private void getInput(){
@@ -42,7 +39,7 @@ public class Archer extends Unit{
 
     @Override
     public void render(Graphics g) {
-        g.drawImage(Assets.player1, (int)x, (int)y, width, height, null);
+        g.drawImage(Assets.player1, (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
     }
     
 }

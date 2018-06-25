@@ -1,6 +1,7 @@
 package entities.unit;
 
 import entities.Entity;
+import fantasorder.Game;
 
 public abstract class Unit extends Entity{
     
@@ -13,8 +14,8 @@ public abstract class Unit extends Entity{
     protected float speed;
     protected float xMove,yMove;
     
-    public Unit(float x, float y,int width, int height) {
-        super(x, y, width, height);
+    public Unit(Game game, float x, float y,int width, int height) {
+        super(game, x, y, width, height);
         this.darah = darah_semula;
         this.speed = speed_semula;
         this.xMove = 0;

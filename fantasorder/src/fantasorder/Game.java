@@ -2,6 +2,7 @@ package fantasorder;
 
 import fantasorder.display.Display;
 import fantasorder.gfx.Assets;
+import fantasorder.gfx.GameCamera;
 import input.Input;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
@@ -12,7 +13,7 @@ import states.State;
 public class Game implements Runnable{
     
     private Display display;
-    public int width, height;
+    private int width, height;
     public String title;
     private Thread thread;
     private boolean running = false;
@@ -28,6 +29,9 @@ public class Game implements Runnable{
     //Input
     private Input ip;
     
+    //Camera
+    private GameCamera gameCamera;
+    
     public Game(String title, int width, int height) {
         this.width = width;
         this.height = height;
@@ -39,6 +43,8 @@ public class Game implements Runnable{
         display = new Display(title, width, height);
         display.getFrame().addKeyListener(ip);
         Assets.init();
+        
+        gameCamera = new GameCamera(this,0,0);
         
         gameState = new GameState(this); // this = class game karna parameter
         menuState = new MenuState(this);
@@ -69,8 +75,8 @@ public class Game implements Runnable{
             State.getState().render(g);    
         }
         
-        //g.drawImage(Assets.dirt, 10, 10, null);
-        //g.drawImage(Assets.grass, 60, 10, null);
+        //g.drawImage(Assets.stone01, 70, 10, null);
+        //g.drawImage(Assets.water09,120,10,null);
         //disini end nya
         bs.show();
         g.dispose();
@@ -115,6 +121,18 @@ public class Game implements Runnable{
     
     public Input getInput(){
         return ip;
+    }
+    
+    public GameCamera getGameCamera(){
+        return gameCamera;
+    }
+    
+    public int getWidth(){
+        return width;
+    }
+    
+    public int getHeight(){
+        return height;
     }
     
     public synchronized void start(){

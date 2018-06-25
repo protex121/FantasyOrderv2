@@ -6,23 +6,20 @@ import java.awt.Graphics;
 
 public class Warrior extends Unit{
 
-    private Game game;
-    
-    
     public Warrior(Game game, float x,float y) {
-        super(x, y, Unit.width_semula, Unit.height_semula);
-        this.game = game;
+        super(game, x, y, Unit.width_semula, Unit.height_semula);
     }
     
     @Override
     public void tick() {
         getInput();
         move();
+        game.getGameCamera().centerOnEntity(this);
     }
 
     @Override
     public void render(Graphics g) {
-        g.drawImage(Assets.player3, (int)x, (int)y, width, height, null);
+        g.drawImage(Assets.player3, (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
     }
     
     private void getInput(){
