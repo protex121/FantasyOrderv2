@@ -1,6 +1,9 @@
 package states;
 
 import entities.unit.Archer;
+import entities.unit.Priest;
+import entities.unit.Unit;
+import entities.unit.Warrior;
 import fantasorder.Game;
 import fantasorder.gfx.Assets;
 import java.awt.Graphics;
@@ -8,14 +11,13 @@ import tiles.Tile;
 
 public class GameState extends State{
 
-    private Archer a;
+    private Priest a; // ini nanti yang dimainkan
     
     public GameState(Game game) {
         super(game);
-        a = new Archer(game, 100, 100);
+        a = new Priest(game, 100, 100);
     }
 
-    
     @Override
     public void tick() {
         a.tick();

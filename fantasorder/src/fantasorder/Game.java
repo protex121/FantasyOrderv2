@@ -2,16 +2,9 @@ package fantasorder;
 
 import fantasorder.display.Display;
 import fantasorder.gfx.Assets;
-import fantasorder.gfx.ImageLoader;
-import fantasorder.gfx.SpriteSheet;
 import input.Input;
-import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
-import java.awt.image.BufferedImage;
-import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import states.GameState;
 import states.MenuState;
 import states.State;
