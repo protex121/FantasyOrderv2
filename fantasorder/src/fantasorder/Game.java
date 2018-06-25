@@ -17,14 +17,15 @@ public class Game implements Runnable{
     private Thread thread;
     private boolean running = false;
     
+    //untuk menggambar
     private BufferStrategy bs;
     private Graphics g;
     
-    //Panel
+    //Objek Panel
     private State gameState;
     private State menuState;
     
-    //input
+    //Input
     private Input ip;
     
     public Game(String title, int width, int height) {

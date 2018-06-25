@@ -8,7 +8,6 @@ public class Priest extends Unit{
 
     private Game game;
     
-    
     public Priest(Game game, float x,float y) {
         super(x, y, Unit.width_semula, Unit.height_semula);
         this.game = game;
