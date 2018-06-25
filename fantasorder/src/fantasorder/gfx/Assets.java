@@ -3,7 +3,7 @@ package fantasorder.gfx;
 import java.awt.image.BufferedImage;
 
 public class Assets {
-    
+    //motong gambar belum lengkap
     private static final int width = 50, height = 50;
     public static BufferedImage player1, player2, player3, dirt, grass, stone, tree;
     

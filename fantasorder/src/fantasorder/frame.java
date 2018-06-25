@@ -63,7 +63,7 @@ public class frame extends javax.swing.JFrame {
     private void btnloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnloginActionPerformed
         this.setVisible(false);
         this.dispose();
-        Game game = new Game("Fantasy Order",width,height);
+        Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
         game.start();
     }//GEN-LAST:event_btnloginActionPerformed
 

@@ -60,7 +60,8 @@ public class Game implements Runnable{
             return;
         }
         g = bs.getDrawGraphics();
-        //clear screen
+        
+        //clear screen dulu sebelum dicetak untuk mencegah ada gambar yang nyungsep
         g.clearRect(0, 0, width, height);
         
         //disini drawnya
@@ -102,7 +103,7 @@ public class Game implements Runnable{
             }
             
             if(timer >= 1000000000){
-                System.out.println("Ticks dan frame" + ticks);
+                System.out.println("Ticks dan frame : " + ticks);
                 ticks = 0;
                 timer = 0;
             }
