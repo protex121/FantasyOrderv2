@@ -42,7 +42,6 @@ public class Game implements Runnable{
         gameState = new GameState(this); // this = class game karna parameter
         menuState = new MenuState(this);
         
-        
         State.setState(gameState);
     }
     

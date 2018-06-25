@@ -11,7 +11,7 @@ import tiles.Tile;
 
 public class GameState extends State{
 
-    private Priest a; // ini nanti yang dimainkan
+    private Priest a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     
     public GameState(Game game) {
         super(game);
