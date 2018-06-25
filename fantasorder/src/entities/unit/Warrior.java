@@ -4,20 +4,25 @@ import fantasorder.Game;
 import fantasorder.gfx.Assets;
 import java.awt.Graphics;
 
-public class Archer extends Unit{
+public class Warrior extends Unit{
 
     private Game game;
     
     
-    public Archer(Game game, float x,float y) {
+    public Warrior(Game game, float x,float y) {
         super(x, y, Unit.width_semula, Unit.height_semula);
         this.game = game;
     }
-
+    
     @Override
     public void tick() {
         getInput();
         move();
+    }
+
+    @Override
+    public void render(Graphics g) {
+        g.drawImage(Assets.player3, (int)x, (int)y, width, height, null);
     }
     
     private void getInput(){
@@ -38,11 +43,6 @@ public class Archer extends Unit{
             xMove = speed;
         }
         
-    }
-
-    @Override
-    public void render(Graphics g) {
-        g.drawImage(Assets.player1, (int)x, (int)y, width, height, null);
     }
     
 }

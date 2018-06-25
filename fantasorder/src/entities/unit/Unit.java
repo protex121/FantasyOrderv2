@@ -58,7 +58,4 @@ public abstract class Unit extends Entity{
         this.yMove = yMove;
     }
     
-    
-    
-    
 }

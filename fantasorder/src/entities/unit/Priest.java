@@ -4,16 +4,15 @@ import fantasorder.Game;
 import fantasorder.gfx.Assets;
 import java.awt.Graphics;
 
-public class Archer extends Unit{
+public class Priest extends Unit{
 
     private Game game;
     
-    
-    public Archer(Game game, float x,float y) {
+    public Priest(Game game, float x,float y) {
         super(x, y, Unit.width_semula, Unit.height_semula);
         this.game = game;
     }
-
+    
     @Override
     public void tick() {
         getInput();
@@ -42,7 +41,7 @@ public class Archer extends Unit{
 
     @Override
     public void render(Graphics g) {
-        g.drawImage(Assets.player1, (int)x, (int)y, width, height, null);
+        g.drawImage(Assets.player2, (int)x, (int)y, width, height, null);
     }
     
 }

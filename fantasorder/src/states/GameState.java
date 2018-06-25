@@ -1,6 +1,9 @@
 package states;
 
 import entities.unit.Archer;
+import entities.unit.Priest;
+import entities.unit.Unit;
+import entities.unit.Warrior;
 import fantasorder.Game;
 import fantasorder.gfx.Assets;
 import java.awt.Graphics;
@@ -8,14 +11,13 @@ import tiles.Tile;
 
 public class GameState extends State{
 
-    private Archer a;
+    private Priest a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     
     public GameState(Game game) {
         super(game);
-        a = new Archer(game, 100, 100);
+        a = new Priest(game, 100, 100);
     }
 
-    
     @Override
     public void tick() {
         a.tick();
@@ -23,6 +25,10 @@ public class GameState extends State{
 
     @Override
     public void render(Graphics g) {
+        /*disini adalah bagian cetak mencetak bagian istilahnya panel nah a itu = player bisa diganti UNIT dulu
+            tiles adalah bagian gambar petak nya map
+        */
+       
        a.render(g);
        Tile.tiles[0].render(g, 0, 0);
     }

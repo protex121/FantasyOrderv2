@@ -2,16 +2,9 @@ package fantasorder;
 
 import fantasorder.display.Display;
 import fantasorder.gfx.Assets;
-import fantasorder.gfx.ImageLoader;
-import fantasorder.gfx.SpriteSheet;
 import input.Input;
-import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
-import java.awt.image.BufferedImage;
-import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import states.GameState;
 import states.MenuState;
 import states.State;
@@ -24,14 +17,15 @@ public class Game implements Runnable{
     private Thread thread;
     private boolean running = false;
     
+    //untuk menggambar
     private BufferStrategy bs;
     private Graphics g;
     
-    //Panel
+    //Objek Panel
     private State gameState;
     private State menuState;
     
-    //input
+    //Input
     private Input ip;
     
     public Game(String title, int width, int height) {
@@ -48,7 +42,6 @@ public class Game implements Runnable{
         
         gameState = new GameState(this); // this = class game karna parameter
         menuState = new MenuState(this);
-        
         
         State.setState(gameState);
     }
@@ -67,7 +60,8 @@ public class Game implements Runnable{
             return;
         }
         g = bs.getDrawGraphics();
-        //clear screen
+        
+        //clear screen dulu sebelum dicetak untuk mencegah ada gambar yang nyungsep
         g.clearRect(0, 0, width, height);
         
         //disini drawnya
@@ -109,7 +103,7 @@ public class Game implements Runnable{
             }
             
             if(timer >= 1000000000){
-                System.out.println("Ticks dan frame" + ticks);
+                System.out.println("Ticks dan frame : " + ticks);
                 ticks = 0;
                 timer = 0;
             }
