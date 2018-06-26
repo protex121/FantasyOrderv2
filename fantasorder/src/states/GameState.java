@@ -12,6 +12,7 @@ import world.World;
 
 public class GameState extends State{
 
+<<<<<<< HEAD
     private Priest a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     private World world;
     
@@ -19,6 +20,13 @@ public class GameState extends State{
         super(game);
         a = new Priest(game, 100, 100);
         world = new World(game, "mapdesa.txt"); //load Map dari file TXT
+=======
+    private Unit a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
+    
+    public GameState(Game game) {
+        super(game);
+        a = new Archer(game, 100, 100);
+>>>>>>> origin/sion
     }
 
     @Override
