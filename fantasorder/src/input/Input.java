@@ -1,15 +1,20 @@
 package input;
 
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class Input implements KeyListener{
+public class Input implements KeyListener, FocusListener{
 
     private boolean[] keys;
+    private static boolean[] justPressed;
+    
     public boolean atas, kiri, kanan, bawah;
     
     public Input() {
         keys = new boolean[256];
+        justPressed = new boolean[256];
     }
     
     public void tick(){
@@ -17,6 +22,7 @@ public class Input implements KeyListener{
         kiri = keys[KeyEvent.VK_A];
         kanan = keys[KeyEvent.VK_D];
         bawah = keys[KeyEvent.VK_S];
+        
     }
     
     @Override
@@ -26,24 +32,35 @@ public class Input implements KeyListener{
 
     @Override
     public void keyPressed(java.awt.event.KeyEvent evt) {
-        char temp = evt.getKeyChar();
         
-        //if(temp == 'w' || temp == 'a' || temp == 's' || temp == 'd'){
             keys[evt.getKeyCode()] = true;
-            System.out.println("sukses1");
-        //}
+            System.out.println("sukses 1");
+            justPressed[evt.getKeyCode()] = true;
+            
         
     }
 
     @Override
     public void keyReleased(java.awt.event.KeyEvent evt) {
-        char temp = evt.getKeyChar();
         
-        //if(temp == 'w' || temp == 'a' || temp == 's' || temp == 'd'){
-            keys[evt.getKeyCode()] = false;
-            System.out.println("sukses2");
-        //}
-        
+            if(justPressed[evt.getKeyCode()]){
+                keys[evt.getKeyCode()] = false;
+                System.out.println("sukses 2");
+                justPressed[evt.getKeyCode()] = false;
+            }
+    }
+
+    @Override
+    public void focusGained(FocusEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void focusLost(FocusEvent e) {
+        for(int i = 0; i < keys.length; i++){
+            keys[i] = false;
+        }
+			
     }
     
 }
