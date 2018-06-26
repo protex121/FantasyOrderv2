@@ -10,8 +10,8 @@ public class GameCamera {
     
     public GameCamera(Game game, float xOffset, float yOffset){
         this.game = game;
-        this.xOffset = xOffset; //jarak pergeseran map(each tiles) pada sumbu x
-        this.yOffset = yOffset; //jarak pergeseran map(each tiles) pada sumbu y        
+        this.xOffset = xOffset; //lokasi koordinat sumbu x awal yang ditampilkan pada layar
+        this.yOffset = yOffset; //lokasi koordinat sumbu y awal yang ditampilkan pada layar
     }
     
     public void centerOnEntity(Entity e){

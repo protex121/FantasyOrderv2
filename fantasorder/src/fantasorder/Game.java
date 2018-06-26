@@ -75,7 +75,7 @@ public class Game implements Runnable{
             State.getState().render(g);    
         }
         
-        g.drawImage(Assets.stone01, 70, 10, null);
+        //g.drawImage(Assets.stone01, 70, 10, null);
         //g.drawImage(Assets.water09,120,10,null);
         //disini end nya
         bs.show();
