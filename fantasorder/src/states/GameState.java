@@ -5,28 +5,22 @@ import entities.unit.Priest;
 import entities.unit.Unit;
 import entities.unit.Warrior;
 import fantasorder.Game;
+import fantasorder.Handler;
 import fantasorder.gfx.Assets;
 import java.awt.Graphics;
 import tiles.Tile;
 import world.World;
 
 public class GameState extends State{
-
-<<<<<<< HEAD
     private Priest a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     private World world;
     
-    public GameState(Game game) {
-        super(game);
-        a = new Priest(game, 100, 100);
+    public GameState(Handler handler) {
+        super(handler);
         world = new World(game, "mapdesa.txt"); //load Map dari file TXT
-=======
-    private Unit a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
-    
-    public GameState(Game game) {
-        super(game);
-        a = new Archer(game, 100, 100);
->>>>>>> origin/sion
+        handler.setWorld(world);
+        a = new Priest(game, 100, 100);
+        
     }
 
     @Override

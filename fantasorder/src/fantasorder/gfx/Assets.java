@@ -5,7 +5,6 @@ import java.awt.image.BufferedImage;
 public class Assets {
     //motong gambar belum lengkap
     private static final int width = 50, height = 50;
-<<<<<<< HEAD
     public static BufferedImage redroof02,
             lamp01,lamp02,lamp03,
             doorway, water01, water02,water03,water04,water05,water06,water07,water08,water09,
@@ -33,13 +32,10 @@ public class Assets {
             cliff03,cliff04,cliff05,cliff06, stair01,stair02, 
             land01,land02,land03,land04;
 
-=======
-    public static BufferedImage dirt, grass, stone, tree;
     public static BufferedImage[] archer_down, archer_up, archer_left, archer_right;
     public static BufferedImage[] priest_down, priest_up, priest_left, priest_right;
     public static BufferedImage[] warrior_down, warrior_up, warrior_left, warrior_right;
     
->>>>>>> origin/sion
     public static void init(){
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/archer_walk.png"));
         //player1 = sheet.crop(0, 0, width, height);
@@ -53,17 +49,17 @@ public class Assets {
         archer_right = new BufferedImage[3];
         
         /*insert gambar player archer*/
-        archer_down[0] = sheet.crop(0, 5, width, height);
-        archer_down[1] = sheet.crop(50, 5, width, height);
-        archer_down[2] = sheet.crop(100, 5, width, height);
+        archer_down[0] = sheet.crop(0, 0, width, height);
+        archer_down[1] = sheet.crop(50, 0, width, height);
+        archer_down[2] = sheet.crop(100, 0, width, height);
         
         archer_left[0] = sheet.crop(0, 50, width, height);
-        archer_left[1] = sheet.crop(50, 50, width, height);
+        archer_left[1] = sheet.crop(50, 49, width, height);
         archer_left[2] = sheet.crop(100, 50, width, height);
         
-        archer_right[0] = sheet.crop(0, 100, width, height);
-        archer_right[1] = sheet.crop(50, 100, width, height);
-        archer_right[2] = sheet.crop(100, 100, width, height);
+        archer_right[0] = sheet.crop(0, 98, width, height);
+        archer_right[1] = sheet.crop(50, 97, width, height);
+        archer_right[2] = sheet.crop(100, 98, width, height);
         
         archer_up[0] = sheet.crop(0, 145, width, height);
         archer_up[1] = sheet.crop(50, 145, width, height);
@@ -76,17 +72,17 @@ public class Assets {
         priest_left = new BufferedImage[3];
         priest_right = new BufferedImage[3];
         
-        priest_down[0] = sheet.crop(0, 5, width, height);
-        priest_down[1] = sheet.crop(50, 5, width, height);
-        priest_down[2] = sheet.crop(100, 5, width, height);
+        priest_down[0] = sheet.crop(0, 0, width, height);
+        priest_down[1] = sheet.crop(50, 0, width, height);
+        priest_down[2] = sheet.crop(100, 0, width, height);
         
         priest_left[0] = sheet.crop(0, 50, width, height);
-        priest_left[1] = sheet.crop(50, 50, width, height);
+        priest_left[1] = sheet.crop(50, 49, width, height);
         priest_left[2] = sheet.crop(100, 50, width, height);
         
-        priest_right[0] = sheet.crop(0, 100, width, height);
-        priest_right[1] = sheet.crop(50, 100, width, height);
-        priest_right[2] = sheet.crop(100, 100, width, height);
+        priest_right[0] = sheet.crop(0, 98, width, height);
+        priest_right[1] = sheet.crop(50, 97, width, height);
+        priest_right[2] = sheet.crop(100, 98, width, height);
         
         priest_up[0] = sheet.crop(0, 145, width, height);
         priest_up[1] = sheet.crop(50, 145, width, height);

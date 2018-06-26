@@ -1,19 +1,20 @@
 package world;
 
 import Utils.Utils;
-import fantasorder.Game;
+import fantasorder.game;
+import fantasorder.Handler;
 import java.awt.Graphics;
 import tiles.Tile;
 
 public class World {
     
-    private Game game;
+    private Handler handler;
     private int width, height;
     private int spawnX, spawnY;
     private int[][] tiles;
     
-    public World(Game game, String path){
-        this.game = game;
+    public World(Handler handler, String path){
+        this.handler = handler;
         loadWorld(path);        
     }
     
@@ -23,16 +24,16 @@ public class World {
     
     public void render(Graphics g){
         //untuk menampilkan dan memproses yang hanya muncul pada layar saja utk sumbu x
-        int xStart = (int) Math.max(0, game.getGameCamera().getxOffset() / Tile.tilewidth); 
-        int xEnd = (int) Math.min(width, ((game.getGameCamera().getxOffset() + game.getWidth())/ Tile.tilewidth) + 1);
+        int xStart = (int) Math.max(0, handler.getGameCamera().getxOffset() / Tile.tilewidth); 
+        int xEnd = (int) Math.min(width, ((handler.getGameCamera().getxOffset() + handler.getWidth())/ Tile.tilewidth) + 1);
         
         //untuk menampilkan dan memproses yang hanya muncul pada layar saja utk sumbu y
-        int yStart = (int) Math.max(0, game.getGameCamera().getyOffset() / Tile.tileheight); 
-        int yEnd = (int) Math.min(height, ((game.getGameCamera().getyOffset() + game.getHeight())/Tile.tileheight) + 1);
+        int yStart = (int) Math.max(0, handler.getGameCamera().getyOffset() / Tile.tileheight); 
+        int yEnd = (int) Math.min(height, ((handler.getGameCamera().getyOffset() + handler.getHeight())/Tile.tileheight) + 1);
         
         for (int i = yStart; i < yEnd; i++) {
             for (int j = xStart; j < xEnd; j++) {
-                getTile(j,i).render(g,(int)(j*Tile.tilewidth - game.getGameCamera().getxOffset()),(int)(i*Tile.tileheight - game.getGameCamera().getyOffset())); //menampilkan dan menggeser map
+                getTile(j,i).render(g,(int)(j*Tile.tilewidth - handler.getGameCamera().getxOffset()),(int)(i*Tile.tileheight - handler.gethandlerCamera().getyOffset())); //menampilkan dan menggeser map
             }
         }        
         

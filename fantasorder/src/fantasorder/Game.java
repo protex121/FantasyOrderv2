@@ -32,6 +32,9 @@ public class Game implements Runnable{
     //Camera
     private GameCamera gameCamera;
     
+    //Handler
+    private Handler handler;
+    
     public Game(String title, int width, int height) {
         this.width = width;
         this.height = height;
@@ -45,9 +48,10 @@ public class Game implements Runnable{
         Assets.init();
         
         gameCamera = new GameCamera(this,0,0);
+        handler = new Handler(this);
         
-        gameState = new GameState(this); // this = class game karna parameter
-        menuState = new MenuState(this);
+        gameState = new GameState(handler); // this = class game karna parameter
+        menuState = new MenuState(handler);
         
         State.setState(gameState);
     }
@@ -75,17 +79,11 @@ public class Game implements Runnable{
         if(State.getState() != null){
             State.getState().render(g);    
         }
-        
-<<<<<<< HEAD
-        //g.drawImage(Assets.stone01, 70, 10, null);
-        //g.drawImage(Assets.water09,120,10,null);
-=======
         //test case
-        //g.drawImage(Assets.archer_left[0], 10, 10, null);
+        
+        //g.drawImage(Assets.priest_down[2], 10, 10, null);
         //g.drawImage(Assets.archer_left[1], 50, 50, null);
         //g.drawImage(Assets.archer_left[2], 100, 100, null);
-        
->>>>>>> origin/sion
         //disini end nya
         bs.show();
         g.dispose();
