@@ -7,12 +7,20 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
 public class Warrior extends Unit{
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/alvin
     private Game game;
     private Animation anim_down,anim_up,anim_left,anim_right;
     
     public Warrior(Game game, float x,float y) {
+<<<<<<< HEAD
         super(game,x, y, Unit.width_semula, Unit.height_semula);
+=======
+        super(game, x, y, Unit.width_semula, Unit.height_semula);
+>>>>>>> origin/alvin
         this.game = game;
         
         anim_down = new Animation(500, Assets.warrior_down);
@@ -34,7 +42,12 @@ public class Warrior extends Unit{
 
     @Override
     public void render(Graphics g) {
+<<<<<<< HEAD
         g.drawImage(getCurrAnimFrame(), (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
+=======
+        g.drawImage(Assets.player3, (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
+        g.drawImage(getCurrAnimFrame(), (int)x, (int)y, width, height, null);
+>>>>>>> origin/alvin
     }
     
     private void getInput(){

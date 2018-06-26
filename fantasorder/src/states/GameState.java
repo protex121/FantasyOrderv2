@@ -12,17 +12,23 @@ import tiles.Tile;
 import world.World;
 
 public class GameState extends State{
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/alvin
     private Priest a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     private World world;
     
     public GameState(Handler handler) {
         super(handler);
         world = new World(game, "mapdesa.txt"); //load Map dari file TXT
+<<<<<<< HEAD
         handler.setWorld(world);
         a = new Priest(game, 100, 100);
         
+=======
+>>>>>>> origin/alvin
     }
-
     @Override
     public void tick() {
         world.tick();
@@ -36,7 +42,7 @@ public class GameState extends State{
             tiles adalah bagian gambar petak nya map
         */
         
-       world.render(g);
+       //world.render(g);
        a.render(g);
     }
     

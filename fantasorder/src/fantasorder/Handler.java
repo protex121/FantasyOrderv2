@@ -17,6 +17,7 @@ public class Handler {
     public Input getInput(){
         return game.getInput();
     }
+<<<<<<< HEAD
     
     public GameCamera getGameCamera(){
         return game.getGameCamera();
@@ -26,6 +27,9 @@ public class Handler {
         return game.getInput();
     }
     
+=======
+    /*
+>>>>>>> origin/alvin
     public int getWidth(){
         return game.getWidth();
     }
@@ -41,7 +45,7 @@ public class Handler {
     public void setWorld(World worlds){
         this.worlds = worlds;
     }
-    
+    */
     public Game getGame() {
         return game;
     }

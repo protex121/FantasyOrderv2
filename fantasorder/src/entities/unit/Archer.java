@@ -7,6 +7,10 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
 public class Archer extends Unit{
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/alvin
     private Animation anim_down,anim_up,anim_left,anim_right;
     private Game game;
     
@@ -54,7 +58,13 @@ public class Archer extends Unit{
 
     @Override
     public void render(Graphics g) {
+<<<<<<< HEAD
         g.drawImage(getCurrAnimFrame(), (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
+=======
+        g.drawImage(Assets.player1, (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
+
+        g.drawImage(getCurrAnimFrame(), (int)x, (int)y, width, height, null);
+>>>>>>> origin/alvin
     }
     
     public BufferedImage getCurrAnimFrame(){
