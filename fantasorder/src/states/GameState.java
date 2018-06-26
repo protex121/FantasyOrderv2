@@ -34,7 +34,7 @@ public class GameState extends State{
             tiles adalah bagian gambar petak nya map
         */
         
-       world.render(g);
+       //world.render(g);
        a.render(g);
     }
     

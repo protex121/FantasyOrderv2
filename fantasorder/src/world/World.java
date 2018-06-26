@@ -28,6 +28,7 @@ public class World {
                 getTile(j,i).render(g,(int)(j*Tile.tilewidth - game.getGameCamera().getxOffset()),(int)(i*Tile.tileheight - game.getGameCamera().getyOffset())); //menampilkan dan menggeser map
             }
         }        
+        
     }
     
     public Tile getTile(int x, int y){
