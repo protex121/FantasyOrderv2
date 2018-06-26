@@ -2,22 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-<<<<<<< HEAD
         <group>
             <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/gfx/Assets.java</file>
             <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/states/GameState.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/display/Display.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/entities/unit/Priest.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/entities/unit/Archer.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/Fantasorder.java</file>
+            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/framepick.java</file>
+            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/gfx/AudioPlayer.java</file>
             <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/Game.java</file>
+            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/Fantasorder.java</file>
             <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/frame.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/input/Input.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/entities/unit/Warrior.java</file>
             <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/entities/unit/Unit.java</file>
         </group>
-=======
-        <group/>
->>>>>>> 207df7a587474f08b7bdacedc8bc572535c674c5
     </open-files>
 </project-private>

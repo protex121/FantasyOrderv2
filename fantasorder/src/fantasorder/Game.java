@@ -34,13 +34,18 @@ public class Game implements Runnable{
         this.title = title;
         ip = new Input();
     }
+    
+    int i;
+    public void setPlayer(int i){
+        this.i = i;
+    }
 
     private void init(){
         display = new Display(title, width, height);
         display.getFrame().addKeyListener(ip);
         Assets.init();
         
-        gameState = new GameState(this); // this = class game karna parameter
+        gameState = new GameState(this,i); // this = class game karna parameter
         menuState = new MenuState(this);
         
         State.setState(gameState);

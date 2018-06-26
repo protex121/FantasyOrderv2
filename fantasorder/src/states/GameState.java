@@ -6,16 +6,31 @@ import entities.unit.Unit;
 import entities.unit.Warrior;
 import fantasorder.Game;
 import fantasorder.gfx.Assets;
+import fantasorder.gfx.AudioPlayer;
 import java.awt.Graphics;
 import tiles.Tile;
 
 public class GameState extends State{
 
+    private AudioPlayer bgm;
+    
     private Unit a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     
-    public GameState(Game game) {
+    public GameState(Game game,int i) {
         super(game);
-        a = new Archer(game, 100, 100);
+        //a = new Archer(game, 100, 100);
+        if(i == 1){
+            a = new Warrior(game, 100, 100);
+        }
+        else if(i == 2){
+            a = new Priest(game, 100, 100);
+        }
+        else if(i == 3){
+            a = new Archer(game, 100, 100);
+        }
+        
+        bgm = new AudioPlayer("/sound/bgm.wav");
+        bgm.play();
     }
 
     @Override
@@ -31,6 +46,18 @@ public class GameState extends State{
        
        a.render(g);
        Tile.tiles[0].render(g, 0, 0);
+    }
+    
+    public void setket(int ket){
+        if(ket == 1){
+            a = new Warrior(game, 100, 100);
+        }
+        else if(ket == 2){
+            a = new Priest(game, 100, 100);
+        }
+        else if(ket == 3){
+            a = new Archer(game, 100, 100);
+        }
     }
     
 }
