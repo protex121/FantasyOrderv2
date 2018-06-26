@@ -15,10 +15,10 @@ public class Warrior extends Unit{
         super(handler,x, y, Unit.width_semula, Unit.height_semula);
         this.handler = handler;
         
-        bounds.x = 16;
-        bounds.y = 5;
-        bounds.width = 32;
-        bounds.height = 50;
+        bounds.x = 13; //jarak dari pinggir grid player dri kiri
+        bounds.y = 20; //jarak dari pinggir grid player dri atas
+        bounds.width = 38; //lebar collision detection box
+        bounds.height = 44; //tinggi collision detection box
         
         anim_down = new Animation(500, Assets.warrior_down);
         anim_up = new Animation(500, Assets.warrior_up);
@@ -41,10 +41,12 @@ public class Warrior extends Unit{
     public void render(Graphics g) {
         g.drawImage(getCurrAnimFrame(), (int)(x - handler.getGameCamera().getxOffset()), (int)(y - handler.getGameCamera().getyOffset()), width, height, null);
         
+        /*
         g.setColor(Color.red);
         g.fillRect((int)(x + bounds.x - handler.getGameCamera().getxOffset()),
                 (int)(y + bounds.y - handler.getGameCamera().getyOffset()),
                 bounds.width, bounds.height);
+        */
     }
     
     private void getInput(){

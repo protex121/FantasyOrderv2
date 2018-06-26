@@ -9,6 +9,7 @@ public class Stone01Tile extends Tile{
         super(Assets.stone01, id);
     }
     
+    
     /*@Override
     public boolean isSolid(){
         return true;
