@@ -3,10 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/framepick.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/states/GameState.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/Handler.java</file>
             <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/gfx/Assets.java</file>
+            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/states/GameState.java</file>
             <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/display/Display.java</file>
             <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/entities/unit/Priest.java</file>
             <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/entities/unit/Archer.java</file>
@@ -16,7 +14,6 @@
             <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/input/Input.java</file>
             <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/entities/unit/Warrior.java</file>
             <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/entities/unit/Unit.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/gfx/Animation.java</file>
         </group>
     </open-files>
 </project-private>
