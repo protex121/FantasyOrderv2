@@ -14,7 +14,7 @@ public class Handler {
     public Input getInput(){
         return game.getInput();
     }
-    
+    /*
     public int getWidth(){
         return game.width;
     }
@@ -22,7 +22,7 @@ public class Handler {
     public int getHeight(){
         return game.height;
     }
-    
+    */
     public Game getGame() {
         return game;
     }
