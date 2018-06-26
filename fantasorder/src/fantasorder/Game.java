@@ -82,35 +82,13 @@ public class Game implements Runnable{
         if(State.getState() != null){
             State.getState().render(g);    
         }
-<<<<<<< HEAD
         //test case
         
         //g.drawImage(Assets.priest_down[2], 10, 10, null);
         //g.drawImage(Assets.archer_left[1], 50, 50, null);
         //g.drawImage(Assets.archer_left[2], 100, 100, null);
-=======
         
-/*
-        g.drawImage(Assets.woodswall01, 70, 10, null);
-        g.drawImage(Assets.woodswall02, 70, 58, null);
-        g.drawImage(Assets.woodswall05, 118, 10, null);
-        g.drawImage(Assets.woodswall06, 118, 58, null);
-        g.drawImage(Assets.woodswall03, 164, 10, null);
-        g.drawImage(Assets.woodswall04, 164, 58, null);
-        g.drawImage(Assets.bigbroofb, 120, 10, null);
-        g.drawImage(Assets.bigbroofc, 120, 60, null);
-        g.drawImage(Assets.bigbroofd, 120, 110, null);
-*/
-        g.drawImage(Assets.bigbroofli, 170, 10, null);
-        g.drawImage(Assets.bigbroofri, 218, 10, null);
-        g.drawImage(Assets.bigbroofw, 264, 10, null);
-        //test case
-/*
-        g.drawImage(Assets.archer_left[0], 0, 0, null);
-        g.drawImage(Assets.archer_left[1], 0, 48, null);
-        g.drawImage(Assets.archer_left[2], 0, 96, null);
-*/        
->>>>>>> origin/alvin
+
         //disini end nya
         bs.show();
         g.dispose();

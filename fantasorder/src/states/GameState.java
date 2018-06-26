@@ -12,23 +12,16 @@ import tiles.Tile;
 import world.World;
 
 public class GameState extends State{
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/alvin
     private Priest a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     private World world;
     
     public GameState(Handler handler) {
         super(handler);
-        world = new World(game, "mapdesa.txt"); //load Map dari file TXT
-<<<<<<< HEAD
+        world = new World(handler, "mapdesa.txt"); //load Map dari file TXT
         handler.setWorld(world);
-        a = new Priest(game, 100, 100);
-        
-=======
->>>>>>> origin/alvin
+        a = new Priest(handler, 100, 100);
     }
+    
     @Override
     public void tick() {
         world.tick();

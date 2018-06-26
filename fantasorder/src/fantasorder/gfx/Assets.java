@@ -4,11 +4,8 @@ import java.awt.image.BufferedImage;
 
 public class Assets {
     //motong gambar belum lengkap
-<<<<<<< HEAD
-    private static final int width = 50, height = 50;
-=======
+    
     private static final int width = 48, height = 48;
->>>>>>> origin/alvin
     public static BufferedImage redroof02,
             lamp01,lamp02,lamp03,
             doorway, water01, water02,water03,water04,water05,water06,water07,water08,water09,
@@ -56,18 +53,6 @@ public class Assets {
         
         /*insert gambar player archer*/
         archer_down[0] = sheet.crop(0, 0, width, height);
-<<<<<<< HEAD
-        archer_down[1] = sheet.crop(50, 0, width, height);
-        archer_down[2] = sheet.crop(100, 0, width, height);
-        
-        archer_left[0] = sheet.crop(0, 50, width, height);
-        archer_left[1] = sheet.crop(50, 49, width, height);
-        archer_left[2] = sheet.crop(100, 50, width, height);
-        
-        archer_right[0] = sheet.crop(0, 98, width, height);
-        archer_right[1] = sheet.crop(50, 97, width, height);
-        archer_right[2] = sheet.crop(100, 98, width, height);
-=======
         archer_down[1] = sheet.crop(48, 0, width, height);
         archer_down[2] = sheet.crop(96, 0, width, height);
         
@@ -78,7 +63,6 @@ public class Assets {
         archer_right[0] = sheet.crop(0, 96, width, height);
         archer_right[1] = sheet.crop(48, 96, width, height);
         archer_right[2] = sheet.crop(96, 96, width, height);
->>>>>>> origin/alvin
         
         archer_up[0] = sheet.crop(0, 144, width, height);
         archer_up[1] = sheet.crop(48, 144, width, height);
@@ -92,18 +76,6 @@ public class Assets {
         priest_right = new BufferedImage[3];
         
         priest_down[0] = sheet.crop(0, 0, width, height);
-<<<<<<< HEAD
-        priest_down[1] = sheet.crop(50, 0, width, height);
-        priest_down[2] = sheet.crop(100, 0, width, height);
-        
-        priest_left[0] = sheet.crop(0, 50, width, height);
-        priest_left[1] = sheet.crop(50, 49, width, height);
-        priest_left[2] = sheet.crop(100, 50, width, height);
-        
-        priest_right[0] = sheet.crop(0, 98, width, height);
-        priest_right[1] = sheet.crop(50, 97, width, height);
-        priest_right[2] = sheet.crop(100, 98, width, height);
-=======
         priest_down[1] = sheet.crop(48, 0, width, height);
         priest_down[2] = sheet.crop(96, 0, width, height);
         
@@ -114,7 +86,6 @@ public class Assets {
         priest_right[0] = sheet.crop(0, 96, width, height);
         priest_right[1] = sheet.crop(48, 96, width, height);
         priest_right[2] = sheet.crop(96, 96, width, height);
->>>>>>> origin/alvin
         
         priest_up[0] = sheet.crop(0, 144, width, height);
         priest_up[1] = sheet.crop(48, 144, width, height);
@@ -236,7 +207,7 @@ public class Assets {
         board02 = sheet.crop(288,0,width,height);
         board03 = sheet.crop(240,48,width,height);
         bigtree01 = sheet.crop(0,672,width,height);
-        bigtree02 = sheet.crop(0,7120,width, height);
+        bigtree02 = sheet.crop(0,720,width, height);
         bigtree03 = sheet.crop(48,672,width,height);
         bigtree04 = sheet.crop(48,720,width,height);
         bigtrees01 = sheet.crop(96,672,width,height);

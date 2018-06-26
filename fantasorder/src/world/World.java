@@ -1,7 +1,6 @@
 package world;
 
 import Utils.Utils;
-import fantasorder.game;
 import fantasorder.Handler;
 import java.awt.Graphics;
 import tiles.Tile;
@@ -33,7 +32,7 @@ public class World {
         
         for (int i = yStart; i < yEnd; i++) {
             for (int j = xStart; j < xEnd; j++) {
-                getTile(j,i).render(g,(int)(j*Tile.tilewidth - handler.getGameCamera().getxOffset()),(int)(i*Tile.tileheight - handler.gethandlerCamera().getyOffset())); //menampilkan dan menggeser map
+                getTile(j,i).render(g,(int)(j*Tile.tilewidth - handler.getGameCamera().getxOffset()),(int)(i*Tile.tileheight - handler.getGameCamera().getyOffset())); //menampilkan dan menggeser map
             }
         }        
         

@@ -2,6 +2,20 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/world/World.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/states/State.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/unit/Unit.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/fantasorder/Game.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/unit/Archer.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/states/MenuState.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/Entity.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/fantasorder/gfx/Assets.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/unit/Priest.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/unit/Warrior.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/fantasorder/Handler.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/states/GameState.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/input/Input.java</file>
+        </group>
     </open-files>
 </project-private>

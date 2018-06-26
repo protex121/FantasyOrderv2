@@ -1,23 +1,19 @@
 package entities.unit;
 
-import fantasorder.Game;
+import fantasorder.Handler;
 import fantasorder.gfx.Animation;
 import fantasorder.gfx.Assets;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
 public class Archer extends Unit{
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/alvin
     private Animation anim_down,anim_up,anim_left,anim_right;
-    private Game game;
+    private Handler handler;
     
     
-    public Archer(Game game, float x,float y) {
-        super(game, x, y, Unit.width_semula, Unit.height_semula);
-        this.game = game;
+    public Archer(Handler handler, float x,float y) {
+        super(handler, x, y, Unit.width_semula, Unit.height_semula);
+        this.handler = handler;
         
         anim_down = new Animation(500, Assets.archer_down);
         anim_up = new Animation(500, Assets.archer_up);
@@ -33,7 +29,7 @@ public class Archer extends Unit{
         anim_right.tick();
         getInput();
         move();
-        game.getGameCamera().centerOnEntity(this);
+        handler.getGameCamera().centerOnEntity(this);
     }
     
     private void getInput(){
@@ -41,16 +37,16 @@ public class Archer extends Unit{
         xMove = 0;
         yMove = 0;
         
-        if(game.getInput().atas){
+        if(handler.getInput().atas){
             yMove = -speed;
         }
-        else if(game.getInput().bawah){
+        else if(handler.getInput().bawah){
             yMove = speed;
         }
-        else if(game.getInput().kiri){
+        else if(handler.getInput().kiri){
             xMove = -speed;
         }
-        else if(game.getInput().kanan){
+        else if(handler.getInput().kanan){
             xMove = speed;
         }
         
@@ -58,13 +54,8 @@ public class Archer extends Unit{
 
     @Override
     public void render(Graphics g) {
-<<<<<<< HEAD
-        g.drawImage(getCurrAnimFrame(), (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
-=======
-        g.drawImage(Assets.player1, (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
+        g.drawImage(getCurrAnimFrame(), (int)(x - handler.getGameCamera().getxOffset()), (int)(y - handler.getGameCamera().getyOffset()), width, height, null);
 
-        g.drawImage(getCurrAnimFrame(), (int)x, (int)y, width, height, null);
->>>>>>> origin/alvin
     }
     
     public BufferedImage getCurrAnimFrame(){
