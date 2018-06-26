@@ -22,9 +22,16 @@ public class World {
     }
     
     public void render(Graphics g){
+        //untuk menampilkan dan memproses yang hanya muncul pada layar saja utk sumbu x
+        int xStart = (int) Math.max(0, game.getGameCamera().getxOffset() / Tile.tilewidth); 
+        int xEnd = (int) Math.min(width, ((game.getGameCamera().getxOffset() + game.getWidth())/ Tile.tilewidth) + 1);
         
-        for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
+        //untuk menampilkan dan memproses yang hanya muncul pada layar saja utk sumbu y
+        int yStart = (int) Math.max(0, game.getGameCamera().getyOffset() / Tile.tileheight); 
+        int yEnd = (int) Math.min(height, ((game.getGameCamera().getyOffset() + game.getHeight())/Tile.tileheight) + 1);
+        
+        for (int i = yStart; i < yEnd; i++) {
+            for (int j = xStart; j < xEnd; j++) {
                 getTile(j,i).render(g,(int)(j*Tile.tilewidth - game.getGameCamera().getxOffset()),(int)(i*Tile.tileheight - game.getGameCamera().getyOffset())); //menampilkan dan menggeser map
             }
         }        
