@@ -14,6 +14,7 @@ public class Priest extends Unit{
         super(handler,x, y, Unit.width_semula, Unit.height_semula);
         this.handler = handler;
         
+        //collision box
         bounds.x = 13; //jarak dari pinggir grid player dri kiri
         bounds.y = 20; //jarak dari pinggir grid player dri atas
         bounds.width = 38; //lebar collision detection box

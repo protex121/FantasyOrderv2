@@ -1,5 +1,6 @@
 package states;
 
+import entities.statics.Tree;
 import entities.unit.Archer;
 import entities.unit.Priest;
 import entities.unit.Unit;
@@ -12,20 +13,20 @@ import tiles.Tile;
 import world.World;
 
 public class GameState extends State{
-    private Unit a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
+    //private Unit a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     private World world;
     
     public GameState(Handler handler) {
         super(handler);
         world = new World(handler, "mapdesa.txt"); //load Map dari file TXT
         handler.setWorld(world);
-        a = new Warrior(handler, 100, 100);
+        //a = new Warrior(handler, 100, 100);
     }
     
     @Override
     public void tick() {
         world.tick();
-        a.tick();
+        //a.tick();
     }
 
     @Override
@@ -36,7 +37,7 @@ public class GameState extends State{
         */
         
        world.render(g);
-       a.render(g);
+       //a.render(g);
     }
     
 }

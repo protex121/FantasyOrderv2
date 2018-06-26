@@ -13,6 +13,10 @@ public class Tile {
     public static Tile Dirt04 = new Dirt04Tile(4);
     public static Tile Dirt05 = new Dirt05Tile(5);
     public static Tile Dirt06 = new Dirt06Tile(6);
+    public static Tile Dirt07 = new Dirt07Tile(7);
+    public static Tile Dirt08 = new Dirt08Tile(8);
+    public static Tile Dirt09 = new Dirt09Tile(9);
+    public Static Tile Dirt10 = new Dirt10Tile(10);
     public static Tile Stone01 = new Stone01Tile(11);
     public static Tile Stone02 = new Stone02Tile(12);
     public static Tile Stone03 = new Stone03Tile(13);

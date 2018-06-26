@@ -7,15 +7,12 @@ public class Assets {
     
     private static final int width = 48, height = 48;
     public static BufferedImage redroof02,
-            lamp01,lamp02,lamp03,
-            doorway, water01, water02,water03,water04,water05,water06,water07,water08,water09,
-            bigtree01,bigtree02,bigtree03,bigtree04,
-            bigtrees01,bigtrees02,bigtrees03,bigtrees04,
+            lamp, doorway, water01, water02,water03,
+            water04,water05,water06,water07,water08,water09,
+            bigtree, bigtrees,
             tree01,tree02,trees,
             board01,board02,board03,
-            tent01,tent02,tent03,tent04,
-            tent05,tent06,tent07,tent08,tent09,
-            redcrest01, redcrest02,
+            tent, redcrest,
             redroof01, woodenroof01, 
             woodenroof02, hayroof01, 
             hayroof02, walls01,walls02,
@@ -122,7 +119,7 @@ public class Assets {
         dirt03 = sheet.crop(144,48,width,height);
         dirt04 = sheet.crop(96,96,width,height);
         dirt05 = sheet.crop(144,96,width,height);
-        dirt06 = sheet.crop(144,48,width,height);
+        dirt06 = sheet.crop(144,72,width,height);
         //buat apa? numpuk 03-06
         dirt07 = sheet.crop(96,72,width,height);
         dirt08 = sheet.crop(130,94,width,height);
@@ -178,8 +175,7 @@ public class Assets {
         greenroof01 = sheet.crop(288,0,width,height);
         greenroof02 = sheet.crop(288,46, width, height);
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_C.png"));
-        redcrest01 = sheet.crop(0,192,width,height);
-        redcrest02 = sheet.crop(0,240,width,height);
+        redcrest = sheet.crop(0,192,width,height*2);
         //roof besar coklat, dari pojok atas ke pojok bawah
         bigbrooflb = sheet.crop(624,144,width,height);
         bigbroofl = sheet.crop(624,192,width,height);
@@ -194,33 +190,16 @@ public class Assets {
         bigbroofri = sheet.crop(576,336,width,height);//menjorok kedalam
         bigbroofw = sheet.crop(528,336,width,height);
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_B.png"));
-        tent01 = sheet.crop(384,480,width,height);
-        tent02 = sheet.crop(384,528,width,height);
-        tent03 = sheet.crop(384,576,width,height);
-        tent04 = sheet.crop(432,480,width,height);
-        tent05 = sheet.crop(432,530,width,height);
-        tent06 = sheet.crop(432,580,width,height);
-        tent07 = sheet.crop(480,480,width,height);
-        tent08 = sheet.crop(480,528,width,height);
-        tent09 = sheet.crop(480,576,width,height);
+        tent = sheet.crop(384,480,width*3,height*3);
         board01 = sheet.crop(96,0,width,height);
         board02 = sheet.crop(288,0,width,height);
         board03 = sheet.crop(240,48,width,height);
-        bigtree01 = sheet.crop(0,672,width,height);
-        bigtree02 = sheet.crop(0,720,width, height);
-        bigtree03 = sheet.crop(48,672,width,height);
-        bigtree04 = sheet.crop(48,720,width,height);
-        bigtrees01 = sheet.crop(96,672,width,height);
-        bigtrees02 = sheet.crop(96,720,width,height);
-        bigtrees03 = sheet.crop(144,672,width,height);
-        bigtrees04 = sheet.crop(144,720,width,height);
-        tree01 = sheet.crop(240,528,width,height);
-        tree02 = sheet.crop(240,576,width,height);
+        bigtree = sheet.crop(0,672,width*2,height*2);
+        bigtrees = sheet.crop(96,672,width*2,height*2);
+        tree = sheet.crop(240,528,width,height*2);
         trees = sheet.crop(288,528,width,height);
         doorway = sheet.crop(288,384,width,height);
-        lamp01 = sheet.crop(528,480,width,height);
-        lamp02 = sheet.crop(528,528,width,height);
-        lamp03 = sheet.crop(528,576,width,height);
+        lamp = sheet.crop(528,480,width,height*3);
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_A1.png"));
         water01 = sheet.crop(0,48,width,height);
         water02 = sheet.crop(0,96,width,height);

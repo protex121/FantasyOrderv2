@@ -10,9 +10,9 @@ public class Stone01Tile extends Tile{
     }
     
     
-    /*@Override
+    @Override
     public boolean isSolid(){
         return true;
-    }*/
+    }
     
 }

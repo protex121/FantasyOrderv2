@@ -25,8 +25,13 @@ public abstract class Unit extends Entity{
     }
     
     public void move(){
-        moveX();
-        moveY();
+        if(!checkEntityCollision(xMove, 0f)){
+            moveX();
+        }
+        
+        if(!checkEntityCollision(0f,yMove)){
+            moveY();
+        }
     }
     
     //bergerak untuk di sumbu X
@@ -34,15 +39,20 @@ public abstract class Unit extends Entity{
         if(xMove>0){ //gerak ke kanan
             int tx = (int)(x + xMove + bounds.x + bounds.width)/ Tile.tilewidth; //mendapatkan posisi kotak pengecekan tabrakan bagian kanan sumbu X ketika ke kanan
             if(!collisionWithTile(tx, (int) (y+bounds.y)/ Tile.tileheight) && 
-            !collisionWithTile(tx, (int) (y+bounds.y + bounds.height)/Tile.tileheight)){ //pengecekan ujun atas dan bawah pada posisi TX
+            !collisionWithTile(tx, (int) (y+bounds.y + bounds.height)/Tile.tileheight)){ //pengecekan ujung atas dan bawah pada posisi TX
                 x+=xMove;
+            }else{
+                x = tx * Tile.tilewidth - bounds.x - bounds.width - 1; //memepetkan collision box
             }
         }
         else if(xMove< 0){ //gerak ke kiri
             int tx = (int)(x + xMove + bounds.x)/ Tile.tilewidth; //mendapatkan posisi kotak pengecekan tabrakan bagian kiri di sumbu X ketika ke kiri
             if(!collisionWithTile(tx, (int) (y+bounds.y)/ Tile.tileheight) && 
-            !collisionWithTile(tx, (int) (y+bounds.y + bounds.height)/Tile.tileheight)){ //pengecekan ujun atas dan bawah pada posisi TX
+            !collisionWithTile(tx, (int) (y+bounds.y + bounds.height)/Tile.tileheight)){ //pengecekan ujung atas dan bawah pada posisi TX
                 x+=xMove;
+            }
+            else{
+                x = tx * Tile.tilewidth + Tile.tilewidth - bounds.x; //memepetkan collision box
             }
         }   
     }
@@ -56,6 +66,9 @@ public abstract class Unit extends Entity{
                     !collisionWithTile((int)(x + bounds.x + bounds.width)/Tile.tilewidth,ty)){ //pengecekan ujung kanan dan kiri pada posisi TY
                 y+=yMove;
             }
+            else{
+                y = ty * Tile.tileheight + Tile.tileheight - bounds.y; //memepetkan collision box
+            }
         }
         else if(yMove>0){ // gerak ke bawah
             int ty = (int) (y + yMove + bounds.y + bounds.height)/Tile.tileheight; //mendapatkan posisi kotak pengecekan tabrakan bagian atas sumbu Y ketika gerak ke bawah
@@ -63,6 +76,9 @@ public abstract class Unit extends Entity{
             if(!collisionWithTile((int)(x + bounds.x)/Tile.tilewidth,ty) && 
                     !collisionWithTile((int)(x + bounds.x + bounds.width)/Tile.tilewidth,ty)){ //pengecekan ujung kanan dan kiri pada posisi TY
                 y+=yMove;
+            }
+            else{
+                y = ty*Tile.tileheight - bounds.y - bounds.height -1; //memepetkan collision box
             }
         }
     }

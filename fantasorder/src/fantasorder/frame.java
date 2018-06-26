@@ -2,6 +2,11 @@ package fantasorder;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 public class frame extends javax.swing.JFrame {
 
@@ -74,6 +79,39 @@ public class frame extends javax.swing.JFrame {
         //belum dibuat
     }//GEN-LAST:event_btnsignActionPerformed
 
+ /*       public void save(){
+        try{
+            File file = new File("user.txt");
+         
+            if(file.delete())
+            {
+                System.out.println("File deleted successfully");
+            }
+            else
+            {
+                System.out.println("Failed to delete the file");
+            }
+            
+            FileOutputStream fileout=new FileOutputStream("user.txt");
+            ObjectOutputStream out=new ObjectOutputStream(fileout);
+            out.close();
+            fileout.close();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
+    public void load(){
+        try{
+                    FileInputStream filein=new FileInputStream("user.txt");
+                    ObjectInputStream in=new ObjectInputStream(filein);
+                    in.close();
+                    filein.close();
+                }catch(Exception e){
+                    e.printStackTrace();
+                }
+    }*/
+    
     private void btnexitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexitActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btnexitActionPerformed

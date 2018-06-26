@@ -50,10 +50,10 @@ public class Game implements Runnable{
         display.getFrame().addKeyListener(ip);
         Assets.init();
         
-        gameCamera = new GameCamera(this,0,0);
         handler = new Handler(this);
+        gameCamera = new GameCamera(handler,0,0);        
         
-        gameState = new GameState(handler); // this = class game karna parameter
+        gameState = new GameState(handler); // this = class game karna parameter --> pindah ke dalam "PANEL" game
         menuState = new MenuState(handler);
         
         State.setState(gameState);
@@ -84,7 +84,7 @@ public class Game implements Runnable{
         }
         //test case
         
-        //g.drawImage(Assets.priest_down[2], 10, 10, null);
+        //g.drawImage(Assets.redcrest, 10, 10, null);
         //g.drawImage(Assets.archer_left[1], 50, 50, null);
         //g.drawImage(Assets.archer_left[2], 100, 100, null);
         
