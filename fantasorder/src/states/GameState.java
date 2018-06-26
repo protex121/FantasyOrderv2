@@ -11,11 +11,11 @@ import tiles.Tile;
 
 public class GameState extends State{
 
-    private Priest a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
+    private Unit a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     
     public GameState(Game game) {
         super(game);
-        a = new Priest(game, 100, 100);
+        a = new Archer(game, 100, 100);
     }
 
     @Override
