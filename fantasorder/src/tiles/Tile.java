@@ -94,7 +94,31 @@ public class Tile {
     public static Tile Bigbroofri = new Greenroof02Tile(85);
     public static Tile Bigbroofw = new Greenroof02Tile(86);
     public static Tile Knightstatue = new Greenroof02Tile(87);
-   
+    public static Tile tent = new Greenroof02Tile(88);
+    public static Tile board1 = new Greenroof02Tile(89);
+    public static Tile board2 = new Greenroof02Tile(90);
+    public static Tile board3 = new Greenroof02Tile(91);
+    public static Tile bigtree = new Greenroof02Tile(92);
+    public static Tile bigtrees = new Greenroof02Tile(93);
+    public static Tile tree = new Greenroof02Tile(94);
+    public static Tile trees = new Greenroof02Tile(95);
+    public static Tile doorway = new Greenroof02Tile(96);
+    public static Tile lamp = new Greenroof02Tile(97);
+    public static Tile window = new Greenroof02Tile(98);
+    public static Tile windowg = new Greenroof02Tile(99);
+    public static Tile windowf = new Greenroof02Tile(100);
+    public static Tile windowc = new Greenroof02Tile(101);
+    public static Tile windows = new Greenroof02Tile(102);
+    public static Tile windoows = new Greenroof02Tile(103);
+    public static Tile windooww = new Greenroof02Tile(104);
+    public static Tile pipes = new Greenroof02Tile(105);
+    public static Tile roadsign = new Greenroof02Tile(106);
+    public static Tile well = new Greenroof02Tile(107);
+    public static Tile roadstone = new Greenroof02Tile(108);
+    public static Tile barrel = new Greenroof02Tile(109);
+    public static Tile pot = new Greenroof02Tile(110);
+    public static Tile bucket = new Greenroof02Tile(111);
+    public static Tile trunk = new Greenroof02Tile(112);
     
     public static final int tilewidth = 64,tileheight = 64;
     

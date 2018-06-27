@@ -8,14 +8,9 @@ public class Assets {
     
     private static final int width = 48, height = 48;
     public static BufferedImage 
-            lamp01,lamp02,lamp03,
             doorway, water01, water02,water03,water04,water05,water06,water07,water08,water09,
-            bigtree01,bigtree02,bigtree03,bigtree04,
-            bigtrees01,bigtrees02,bigtrees03,bigtrees04,
-            tree01,tree02,trees,
-            board01,board02,board03,
-            tent01,tent02,tent03,tent04,
-            tent05,tent06,tent07,tent08,tent09,
+            bigtree,bigtrees,tree,trees,lamp,
+            board01,board02,board03,tent,
             redcrest01, redcrest02, knightstatue,
             redroof01, redroof02, woodenroof01, woodenroof02, 
             hayroof01, hayroof02, walls01,walls02,
@@ -32,7 +27,7 @@ public class Assets {
             woodenwall05,woodenwall01,woodenwall02, 
             woodenwall03, woodenwall04 ,player1, 
             player2, player3, dirt01, grass, stone01,
-            stone02,stone03,stone04,stone05, tree, 
+            stone02,stone03,stone04,stone05,
             dirt02, dirt03,dirt04,dirt05,dirt06, dirt07,dirt08,dirt09, dirt10,
             cliff01,cliff02,
             cliff03,cliff04,cliff05,cliff06, stair01,stair02, 
@@ -244,40 +239,23 @@ public class Assets {
         bigbroofw = sheet.crop(528,336,width,height);
         knightstatue = sheet.crop(0,480,width,height*2);
 
+        /*lamp tree bigtree*/
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_B.png"));
-        tent01 = sheet.crop(384,480,width,height);
-        tent02 = sheet.crop(384,528,width,height);
-        tent03 = sheet.crop(384,576,width,height);
-        tent04 = sheet.crop(432,480,width,height);
-        tent05 = sheet.crop(432,528,width,height);
-        tent06 = sheet.crop(432,576,width,height);
-        tent07 = sheet.crop(480,480,width,height);
-        tent08 = sheet.crop(480,528,width,height);
-        tent09 = sheet.crop(480,576,width,height);
+        tent = sheet.crop(384,480,width,height);
         board01 = sheet.crop(96,0,width,height);
         board02 = sheet.crop(288,0,width,height);
         board03 = sheet.crop(240,48,width,height);
-        bigtree01 = sheet.crop(0,672,width,height);
-        bigtree02 = sheet.crop(0,720,width, height);
-        bigtree03 = sheet.crop(48,672,width,height);
-        bigtree04 = sheet.crop(48,720,width,height);
-        bigtrees01 = sheet.crop(96,672,width,height);
-        bigtrees02 = sheet.crop(96,720,width,height);
-        bigtrees03 = sheet.crop(144,672,width,height);
-        bigtrees04 = sheet.crop(144,720,width,height);
-        tree01 = sheet.crop(240,528,width,height);
-        tree02 = sheet.crop(240,576,width,height);
+        bigtree = sheet.crop(0,672,width,height);
+        bigtrees = sheet.crop(96,672,width,height);
+        tree = sheet.crop(240,528,width,height);
         trees = sheet.crop(288,528,width,height);
         doorway = sheet.crop(288,384,width,height);
-        lamp01 = sheet.crop(528,480,width,height);
-        lamp02 = sheet.crop(528,528,width,height);
-        lamp03 = sheet.crop(528,576,width,height);
+        lamp = sheet.crop(528,480,width,height);
         window = sheet.crop(0,192,width,height);
         windowg = sheet.crop(48,192,width,height);
         windowf = sheet.crop(96,192,width,height);
         windowc = sheet.crop(144,192,width,height);
         windows = sheet.crop(48,240,width,height);
-        //ini ukurannya 2 tiles kan?
         windoows = sheet.crop(288,288,width,height*2);
         windooww = sheet.crop(336,288,width,height*2);
         pipes = sheet.crop(0,384,width,height);
