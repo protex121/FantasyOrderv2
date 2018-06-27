@@ -7,27 +7,17 @@ public class Assets {
     //SEBELAH WORTEL NAMANYA APA LUPA CTRL+H INIAPA
     
     private static final int width = 48, height = 48;
-<<<<<<< HEAD
     public static AudioPlayer walk;
     public static BufferedImage bgbattle;
     public static BufferedImage grass, tree, redroof02, dirt01,
             lamp, doorway, water01, water02,water03,
             water04,water05,water06,water07,water08,water09,
-            bigtree, bigtrees,
+            bigtree, bridge,
             board01,board02,board03,
             tent, redcrest,
             redroof01, woodenroof01, 
             woodenroof02, hayroof01, 
             hayroof02, walls01,walls02, knightstatue,
-=======
-    public static BufferedImage 
-            doorway, water01, water02,water03,water04,water05,water06,water07,water08,water09,
-            bigtree,bigtrees,tree,trees,lamp,
-            board01,board02,board03,tent,
-            redcrest, knightstatue,
-            redroof01, redroof02, woodenroof01, woodenroof02, 
-            hayroof01, hayroof02, walls01,walls02,
->>>>>>> origin/alvin
             greenroof01, greenroof02,
             bigbrooflb,bigbroofl,bigbrooflo,
             bigbroofb,bigbroofc,bigbroofd,
@@ -39,12 +29,7 @@ public class Assets {
             woodwalls03, woodwalls01, woodwalls05,
             woodwalls06 , woodenwall06,woodwalls02,
             woodenwall05,woodenwall01,woodenwall02, 
-<<<<<<< HEAD
             woodenwall03, woodenwall04, stone01,
-=======
-            woodenwall03, woodenwall04 ,player1, 
-            player2, player3, dirt01, grass, stone01,
->>>>>>> origin/alvin
             stone02,stone03,stone04,stone05,
             dirt02, dirt03,dirt04,dirt05,dirt06, dirt07,dirt08,dirt09, dirt10,
             cliff01,cliff02,
@@ -170,11 +155,7 @@ public class Assets {
         dirt03 = sheet.crop(144,48,width,height);
         dirt04 = sheet.crop(96,96,width,height);
         dirt05 = sheet.crop(144,96,width,height);
-<<<<<<< HEAD
         dirt06 = sheet.crop(144,72,width,height);
-=======
-        dirt06 = sheet.crop(144,48,width,height);
->>>>>>> origin/alvin
         dirt07 = sheet.crop(96,72,width,height);
         dirt08 = sheet.crop(130,94,width,height);
         dirt09 = sheet.crop(120,48, width, height);
@@ -184,13 +165,8 @@ public class Assets {
         stone03 = sheet.crop(240,48,width,height);
         stone04 = sheet.crop(192,96,width,height);
         stone05 = sheet.crop(240,96,width,height);
-        
-<<<<<<< HEAD
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/bgbattle.png"));
         bgbattle = sheet.crop(0, 0, 900, 585);
-
-=======
->>>>>>> origin/alvin
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_A5.png"));
         cliff01 = sheet.crop(0,672,width,height);
         cliff02 = sheet.crop(0,720,width,height);
@@ -268,32 +244,15 @@ public class Assets {
         bigbroofri = sheet.crop(576,336,width,height);//menjorok kedalam
         bigbroofw = sheet.crop(528,336,width,height);
         knightstatue = sheet.crop(0,480,width,height*2);
-<<<<<<< HEAD
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_B.png"));
         tent = sheet.crop(384,480,width*3,height*3);
         board01 = sheet.crop(96,0,width,height);
         board02 = sheet.crop(288,0,width,height);
         board03 = sheet.crop(240,48,width,height);
         bigtree = sheet.crop(0,672,width*2,height*2);
-        bigtrees = sheet.crop(96,672,width*2,height*2);
         tree = sheet.crop(240,528,width,height*2);
         doorway = sheet.crop(288,384,width,height);
         lamp = sheet.crop(528,480,width,height*3);
-=======
-
-        /*lamp tree bigtree*/
-        sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_B.png"));
-        tent = sheet.crop(384,480,width,height);
-        board01 = sheet.crop(96,0,width,height);
-        board02 = sheet.crop(288,0,width,height);
-        board03 = sheet.crop(240,48,width,height);
-        bigtree = sheet.crop(0,672,width,height);
-        bigtrees = sheet.crop(96,672,width,height);
-        tree = sheet.crop(240,528,width,height);
-        trees = sheet.crop(288,528,width,height);
-        doorway = sheet.crop(288,384,width,height);
-        lamp = sheet.crop(528,480,width,height);
->>>>>>> origin/alvin
         window = sheet.crop(0,192,width,height);
         windowg = sheet.crop(48,192,width,height);
         windowf = sheet.crop(96,192,width,height);
@@ -330,6 +289,7 @@ public class Assets {
         vines01 = sheet.crop(384,384,width,height*2);
         vines02 = sheet.crop(480,384,width,height*2);
         wallhole = sheet.crop(672,384,width,height*2);
+        bridge = sheet.crop(144,96,width,height);
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_A1.png"));
         water01 = sheet.crop(0,48,width,height);
         water02 = sheet.crop(0,96,width,height);
