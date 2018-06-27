@@ -21,13 +21,12 @@ public class World {
     //entities
     private EntityManager entityManager;
     
-    public World(Handler handler, String path){
+    public World(Handler handler, String path1, String path2, String path3, String path4){
         this.handler = handler;
         entityManager = new EntityManager(handler, new Warrior(handler,100,100));
-        entityManager.addEntity(new Tree(handler,100,500));
-        entityManager.addEntity(new Tree(handler,100,750));
         
-        loadWorld(path);  
+        loadWorld(path1);
+        loadTreeEntity(path2);
         
         entityManager.getPlayer().setX(spawnX);
         entityManager.getPlayer().setY(spawnY);
@@ -70,6 +69,31 @@ public class World {
         else{
             return t;
         }
+    }
+    
+    private void loadTreeEntity(String path){
+        String file = Utils.loadFileAsString(path);
+        String[] tokens = file.split("\\s+");
+        int a=0;
+        int c =1;
+        
+        do{
+            if(tokens[a].equals("e")){
+                c++;
+                a++;
+            }
+            else{
+                entityManager.addEntity(c, Utils.parseInt(tokens[a])*Tile.tilewidth, Utils.parseInt(tokens[a+1])*Tile.tileheight, handler);
+                a+=2;
+            }           
+            
+            //entityManager.addEntity(new Tree(handler,Utils.parseInt(tokens[a])*Tile.tilewidth,Utils.parseInt(tokens[a+1])*Tile.tileheight));            
+        }while(a<tokens.length);
+        
+        /*
+        for(int i=0;i<entityManager.getEntities().size();i++){
+            System.out.println(entityManager.getEntities().get(i).getClass().getSimpleName());
+        }*/
     }
     
     private void loadWorld(String path){

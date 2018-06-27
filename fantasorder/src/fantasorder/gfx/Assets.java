@@ -120,11 +120,10 @@ public class Assets {
         dirt04 = sheet.crop(96,96,width,height);
         dirt05 = sheet.crop(144,96,width,height);
         dirt06 = sheet.crop(144,72,width,height);
-        //buat apa? numpuk 03-06
         dirt07 = sheet.crop(96,72,width,height);
         dirt08 = sheet.crop(130,94,width,height);
-        dirt09 = sheet.crop(143,70, width, height);
-        dirt10 = sheet.crop(120,60,width,height);
+        dirt09 = sheet.crop(120,48, width, height);
+        dirt10 = sheet.crop(120,55,width,height);
         stone01 = sheet.crop(192, 0, width, height);
         stone02 = sheet.crop(192,48, width, height);
         stone03 = sheet.crop(240,48,width,height);

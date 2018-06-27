@@ -3,16 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/Window.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/Chimney.java</file>
             <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/world/World.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/tiles/Dirt07Tile.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/tiles/Dirt10Tile.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/Entity.java</file>
             <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/fantasorder/gfx/Assets.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/tiles/Dirt06Tile.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/tiles/Dirt09Tile.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/EntityManager.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/Tent.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/Lamp.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/BigTree.java</file>
             <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/states/GameState.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/tiles/Dirt08Tile.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/fantasorder/Game.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/tiles/Tile.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/Doorway.java</file>
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/Tree.java</file>
         </group>
     </open-files>
 </project-private>

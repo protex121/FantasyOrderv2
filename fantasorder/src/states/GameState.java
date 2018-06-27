@@ -18,7 +18,7 @@ public class GameState extends State{
     
     public GameState(Handler handler) {
         super(handler);
-        world = new World(handler, "mapdesa.txt"); //load Map dari file TXT
+        world = new World(handler, "mapdesa.txt","entitydesa.txt","",""); //load Map dari file TXT
         handler.setWorld(world);
         //a = new Warrior(handler, 100, 100);
     }

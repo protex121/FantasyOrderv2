@@ -1,5 +1,12 @@
 package entities;
 
+import entities.statics.BigTree;
+import entities.statics.Chimney;
+import entities.statics.Doorway;
+import entities.statics.Lamp;
+import entities.statics.Tent;
+import entities.statics.Tree;
+import entities.statics.Window;
 import entities.unit.Unit;
 import fantasorder.Handler;
 import java.awt.Graphics;
@@ -29,7 +36,8 @@ public class EntityManager {
         this.handler = handler;
         this.player = player;
         entities = new ArrayList<Entity>();
-        addEntity(player);
+        this.player = player;
+        addEntity(0,this.player.getX(),this.player.getY(),handler);
     }
     
     public void tick(){
@@ -47,8 +55,31 @@ public class EntityManager {
         }
     }
 
-    public void addEntity(Entity e){
-        entities.add(e);
+    public void addEntity(int a, float x, float y, Handler handler){
+        if(a==0){
+            entities.add(this.player);
+        }
+        else if(a==1){
+            entities.add(new Tree(handler,x,y));
+        }
+        else if(a==2){
+            entities.add(new BigTree(handler,x,y));
+        }
+        else if(a==3){
+            entities.add(new Chimney(handler,x,y));
+        }
+        else if(a==4){
+            entities.add(new Window(handler,x,y));
+        }
+        else if(a==5){
+            entities.add(new Tent(handler,x,y));
+        }
+        else if(a==6){
+            entities.add(new Lamp(handler,x,y));
+        }
+        else if(a==7){
+            entities.add(new Doorway(handler,x,y));
+        }
     }
     
     //getter setter
