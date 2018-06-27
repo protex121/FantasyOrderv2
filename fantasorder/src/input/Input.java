@@ -10,9 +10,10 @@ public class Input implements KeyListener, FocusListener{
     private boolean[] keys;
     private static boolean[] justPressed;
     
-    public boolean atas, kiri, kanan, bawah;
+    public boolean atas, kiri, kanan, bawah, input;
     
     public Input() {
+        input = false;
         keys = new boolean[256];
         justPressed = new boolean[256];
     }
@@ -29,12 +30,17 @@ public class Input implements KeyListener, FocusListener{
         
     }
 
+    public boolean isInput() {
+        return input;
+    }   
+
     @Override
     public void keyPressed(java.awt.event.KeyEvent evt) {
         
             keys[evt.getKeyCode()] = true;
             System.out.println("sukses 1");
             justPressed[evt.getKeyCode()] = true;
+            input= true;
             
     }
 
@@ -46,6 +52,7 @@ public class Input implements KeyListener, FocusListener{
                 System.out.println("sukses 2");
                 justPressed[evt.getKeyCode()] = false;
             }
+            input = false;
     }
 
     @Override

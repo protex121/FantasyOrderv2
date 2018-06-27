@@ -29,16 +29,8 @@ public class Archer extends Unit{
         anim_up = new Animation(500, Assets.archer_up);
         anim_right = new Animation(500, Assets.archer_right);
         anim_left = new Animation(500, Assets.archer_left);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        
         sfx = new HashMap<String, AudioPlayer>();
         sfx.put("walk", Assets.walk);
-=======
->>>>>>> origin/sion
->>>>>>> zam
->>>>>>> origin/sion
     }
 
     @Override
@@ -48,6 +40,20 @@ public class Archer extends Unit{
         anim_left.tick();
         anim_right.tick();
         getInput();
+        if(handler.getInput().isInput()){
+            int b = 10000;            
+            
+            if(handler.getWorld().isBattle()){
+                b = (int)(Math.random()*101+1);
+            }   
+        
+            if(b < 10){
+                System.out.println("game");
+            }
+            else if(b<1000){
+                System.out.println("BLAH");
+            }
+        }
         move();
         handler.getGameCamera().centerOnEntity(this);
     }
@@ -56,42 +62,24 @@ public class Archer extends Unit{
         
         xMove = 0;
         yMove = 0;
-        
-<<<<<<< HEAD
         if(handler.getInput().atas){
-=======
-        if(game.getInput().atas){
             sfx.get("walk").play();
->>>>>>> origin/sion
             yMove = -speed;
             
         }
-<<<<<<< HEAD
         else if(handler.getInput().bawah){
-=======
-        else if(game.getInput().bawah){
             sfx.get("walk").play();
->>>>>>> origin/sion
             yMove = speed;
             
         }
-<<<<<<< HEAD
         else if(handler.getInput().kiri){
-=======
-        else if(game.getInput().kiri){
             sfx.get("walk").play();
->>>>>>> origin/sion
             xMove = -speed;
             
         }
-<<<<<<< HEAD
         else if(handler.getInput().kanan){
             xMove = speed;
-=======
-        else if(game.getInput().kanan){
             sfx.get("walk").play();
-            xMove = speed;       
->>>>>>> origin/sion
         }
         
         

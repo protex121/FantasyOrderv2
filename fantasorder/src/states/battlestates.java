@@ -3,6 +3,7 @@ package states;
 import entities.unit.Archer;
 import entities.unit.Unit;
 import fantasorder.Game;
+import fantasorder.Handler;
 import fantasorder.gfx.Assets;
 import java.awt.Button;
 import java.awt.Color;
@@ -16,9 +17,8 @@ public class battlestates extends State{
     
     Unit a;
     
-    public battlestates(Game game) {
-        super(game);
-        a = new Archer(game,100,100);
+    public battlestates(Handler handler) {
+        super(handler);
     }
     
     

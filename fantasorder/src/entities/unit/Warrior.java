@@ -3,11 +3,8 @@ package entities.unit;
 import fantasorder.Handler;
 import fantasorder.gfx.Animation;
 import fantasorder.gfx.Assets;
-<<<<<<< HEAD
 import java.awt.Color;
-=======
 import fantasorder.gfx.AudioPlayer;
->>>>>>> origin/sion
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
@@ -31,16 +28,9 @@ public class Warrior extends Unit{
         anim_up = new Animation(500, Assets.warrior_up);
         anim_right = new Animation(500, Assets.warrior_right);
         anim_left = new Animation(500, Assets.warrior_left);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
         
         sfx = new HashMap<String, AudioPlayer>();
         sfx.put("walk", Assets.walk);
-=======
->>>>>>> origin/sion
->>>>>>> zam
->>>>>>> origin/sion
     }
     
     @Override
@@ -50,6 +40,21 @@ public class Warrior extends Unit{
         anim_left.tick();
         anim_right.tick();
         getInput();
+        
+        if(handler.getInput().isInput()){
+            int b = 10000;            
+            
+            if(handler.getWorld().isBattle()){
+                b = (int)(Math.random()*101+1);
+            }   
+        
+            if(b < 10){
+                System.out.println("game");
+            }
+            else if(b<1000){
+                System.out.println("BLAH");
+            }
+        }
         move();
         handler.getGameCamera().centerOnEntity(this);
     }
@@ -70,34 +75,20 @@ public class Warrior extends Unit{
         
         xMove = 0;
         yMove = 0;
-        
-<<<<<<< HEAD
         if(handler.getInput().atas){
+            sfx.get("walk").play();
             yMove = -speed;
         }
         else if(handler.getInput().bawah){
+            sfx.get("walk").play();
             yMove = speed;
         }
         else if(handler.getInput().kiri){
+            sfx.get("walk").play();
             xMove = -speed;
         }
         else if(handler.getInput().kanan){
-=======
-        if(game.getInput().atas){
             sfx.get("walk").play();
-            yMove = -speed;
-        }
-        else if(game.getInput().bawah){
-            sfx.get("walk").play();
-            yMove = speed;
-        }
-        else if(game.getInput().kiri){
-            sfx.get("walk").play();
-            xMove = -speed;
-        }
-        else if(game.getInput().kanan){
-            sfx.get("walk").play();
->>>>>>> origin/sion
             xMove = speed;
         }
         
