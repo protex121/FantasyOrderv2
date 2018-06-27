@@ -8,6 +8,7 @@ import java.awt.image.BufferStrategy;
 import states.GameState;
 import states.MenuState;
 import states.State;
+import states.battlestates;
 
 public class Game implements Runnable{
     
@@ -22,8 +23,9 @@ public class Game implements Runnable{
     private Graphics g;
     
     //Objek Panel
-    private State gameState;
-    private State menuState;
+    public State gameState;
+    public State menuState;
+    public State battlestate;
     
     //Input
     private Input ip;
@@ -47,6 +49,7 @@ public class Game implements Runnable{
         
         gameState = new GameState(this,i); // this = class game karna parameter
         menuState = new MenuState(this);
+        battlestate = new battlestates(this);
         
         State.setState(gameState);
     }
@@ -118,7 +121,6 @@ public class Game implements Runnable{
             }
             
         }
-        
         stop();
     }
     

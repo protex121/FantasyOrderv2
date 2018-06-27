@@ -6,12 +6,13 @@ public class Assets {
     //motong gambar belum lengkap
     private static final int width = 50, height = 50;
     public static AudioPlayer walk;
-    public static BufferedImage dirt, grass, stone, tree;
+    public static BufferedImage dirt, grass, stone, tree, bgbattle;
     public static BufferedImage[] archer_down, archer_up, archer_left, archer_right;
     public static BufferedImage[] priest_down, priest_up, priest_left, priest_right;
     public static BufferedImage[] warrior_down, warrior_up, warrior_left, warrior_right;
     
     public static void init(){
+        
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/archer_walk.png"));
         //player1 = sheet.crop(0, 0, width, height);
         //sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/priest_walk.png"));
@@ -92,6 +93,9 @@ public class Assets {
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_A2.png"));
         grass = sheet.crop(0, 0, width, height);
         dirt = sheet.crop(94, 0, width, height);
+        
+        sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/bgbattle.png"));
+        bgbattle = sheet.crop(0, 0, 900, 585);
     }
     
 }

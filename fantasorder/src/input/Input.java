@@ -22,7 +22,6 @@ public class Input implements KeyListener, FocusListener{
         kiri = keys[KeyEvent.VK_A];
         kanan = keys[KeyEvent.VK_D];
         bawah = keys[KeyEvent.VK_S];
-        
     }
     
     @Override

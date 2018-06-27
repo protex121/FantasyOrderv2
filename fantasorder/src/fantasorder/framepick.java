@@ -74,18 +74,24 @@ public class framepick extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnwarriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnwarriorActionPerformed
+        this.setVisible(false);
+        this.dispose();
         Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
         game.setPlayer(1);
         game.start();
     }//GEN-LAST:event_btnwarriorActionPerformed
 
     private void btnpriestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpriestActionPerformed
+        this.setVisible(false);
+        this.dispose();
         Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
         game.setPlayer(2);
         game.start();
     }//GEN-LAST:event_btnpriestActionPerformed
 
     private void btnarcherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnarcherActionPerformed
+        this.setVisible(false);
+        this.dispose();
         Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
         game.setPlayer(3);
         game.start();

@@ -39,46 +39,45 @@ public class frame extends javax.swing.JFrame {
         btnlogin.addMouseListener(new MouseAdapter(){
             @Override
             public void mouseEntered(MouseEvent e) {
-                super.mouseEntered(e); //To change body of generated methods, choose Tools | Templates.
+                super.mouseEntered(e);
                 hover.play();
                 hover.stop();
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
-                super.mouseExited(e); //To change body of generated methods, choose Tools | Templates.
+                super.mouseExited(e);
                 hover.stop();
             }
         });
         btnsign.addMouseListener(new MouseAdapter(){
             @Override
             public void mouseEntered(MouseEvent e) {
-                super.mouseEntered(e); //To change body of generated methods, choose Tools | Templates.
+                super.mouseEntered(e);
                 hover.play();
                 hover.stop();
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
-                super.mouseExited(e); //To change body of generated methods, choose Tools | Templates.
+                super.mouseExited(e);
                 hover.stop();
             }
         });
         btnexit.addMouseListener(new MouseAdapter(){
             @Override
             public void mouseEntered(MouseEvent e) {
-                super.mouseEntered(e); //To change body of generated methods, choose Tools | Templates.
+                super.mouseEntered(e);
                 hover.play();
                 hover.stop();
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
-                super.mouseExited(e); //To change body of generated methods, choose Tools | Templates.
+                super.mouseExited(e);
                 hover.stop();
             }
         });
-        
         
     }
 
@@ -135,7 +134,6 @@ public class frame extends javax.swing.JFrame {
         this.setVisible(false);
         this.dispose();
         bgm.stop();
-        //click.stop();
         framepick f = new framepick();
         f.setVisible(true);
         
@@ -143,17 +141,13 @@ public class frame extends javax.swing.JFrame {
     
 //untuk load
     private void btnsignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsignActionPerformed
-        //belum dibuat
         click.play();
         this.setVisible(false);
         this.dispose();
         bgm.stop();
-        //click.stop();
-        
         Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
         game.setPlayer(1); // berasal dari load
         game.start();
-        
     }//GEN-LAST:event_btnsignActionPerformed
 
     private void btnexitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexitActionPerformed
