@@ -32,7 +32,7 @@ public class frame extends javax.swing.JFrame {
         btnexit.setContentAreaFilled(false);
         btnexit.setBorderPainted(false);
         
-        bgm = new AudioPlayer("/sound/bgm.wav");
+        bgm = new AudioPlayer("/sound/epilogue.wav");
         bgm.play();
         hover = new AudioPlayer("/sound/btnhover.wav");
         click = new AudioPlayer("/sound/btnclick.wav");

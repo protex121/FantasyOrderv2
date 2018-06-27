@@ -37,7 +37,6 @@ public class Input implements KeyListener, FocusListener{
             System.out.println("sukses 1");
             justPressed[evt.getKeyCode()] = true;
             
-        
     }
 
     @Override

@@ -29,8 +29,8 @@ public class GameState extends State{
             a = new Archer(game, 100, 100);
         }
         
-        bgm = new AudioPlayer("/sound/bgm.wav");
-        bgm.play();
+        bgm = new AudioPlayer("/sound/epilogue.wav");
+        //bgm.play();
     }
 
     @Override

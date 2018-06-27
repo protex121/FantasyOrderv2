@@ -5,6 +5,7 @@ import java.awt.image.BufferedImage;
 public class Assets {
     //motong gambar belum lengkap
     private static final int width = 50, height = 50;
+    public static AudioPlayer walk;
     public static BufferedImage dirt, grass, stone, tree;
     public static BufferedImage[] archer_down, archer_up, archer_left, archer_right;
     public static BufferedImage[] priest_down, priest_up, priest_left, priest_right;
@@ -17,6 +18,8 @@ public class Assets {
         //player2 = sheet.crop(0, 0, width, height);
         //sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/warrior_walk.png"));
         //player3 = sheet.crop(0, 0, width, height);
+        walk = new AudioPlayer("/sound/step.wav");
+        
         archer_up = new BufferedImage[3];
         archer_down = new BufferedImage[3];
         archer_left = new BufferedImage[3];
