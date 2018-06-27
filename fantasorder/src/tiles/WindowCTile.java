@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage;
 public class WindowCTile extends Tile{
     
     public WindowCTile(int id) {
-        super(Assets.tent, id);
+        super(Assets.windowc, id);
     }
     
 }

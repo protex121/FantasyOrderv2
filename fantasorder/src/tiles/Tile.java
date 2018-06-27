@@ -119,6 +119,27 @@ public class Tile {
     public static Tile pot = new Greenroof02Tile(110);
     public static Tile bucket = new Greenroof02Tile(111);
     public static Tile trunk = new Greenroof02Tile(112);
+    public static Tile flowerw = new Greenroof02Tile(113);
+    public static Tile flowerp = new Greenroof02Tile(114);
+    public static Tile flowerb = new Greenroof02Tile(115);
+    public static Tile flowero = new Greenroof02Tile(116);
+    public static Tile log = new Greenroof02Tile(117);
+    public static Tile bigstone = new Greenroof02Tile(118);
+    public static Tile gnome = new Greenroof02Tile(119);
+    public static Tile hole = new Greenroof02Tile(120);
+    public static Tile choppedlog = new Greenroof02Tile(121);
+    public static Tile tanaman = new Greenroof02Tile(122);
+    public static Tile carrot = new Greenroof02Tile(123);
+    public static Tile cabbage = new Greenroof02Tile(124);
+    public static Tile grape = new Greenroof02Tile(125);
+    public static Tile mushroom = new Greenroof02Tile(126);
+    public static Tile raflesia = new Greenroof02Tile(127);
+    public static Tile trunkg = new Greenroof02Tile(128);
+    public static Tile manyflower = new Greenroof02Tile(129);
+    public static Tile leaf = new Greenroof02Tile(130);
+    public static Tile vines01 = new Greenroof02Tile(131);
+    public static Tile vines02 = new Greenroof02Tile(132);
+    public static Tile wallhole = new Greenroof02Tile(133);
     
     public static final int tilewidth = 64,tileheight = 64;
     
