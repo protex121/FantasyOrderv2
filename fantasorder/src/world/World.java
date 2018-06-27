@@ -27,7 +27,7 @@ public class World {
         entityManager = new EntityManager(handler, a);
         
         loadWorld(path1);
-        //loadTreeEntity(path2);
+        loadTreeEntity(path2);
         
         entityManager.getPlayer().setX(spawnX);
         entityManager.getPlayer().setY(spawnY);

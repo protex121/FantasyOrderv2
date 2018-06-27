@@ -1,7 +1,6 @@
 package entities;
 
 import entities.statics.BigTree;
-import entities.statics.Chimney;
 import entities.statics.Doorway;
 import entities.statics.Lamp;
 import entities.statics.Tent;
@@ -66,18 +65,15 @@ public class EntityManager {
             entities.add(new BigTree(handler,x,y));
         }
         else if(a==3){
-            entities.add(new Chimney(handler,x,y));
-        }
-        else if(a==4){
             entities.add(new Window(handler,x,y));
         }
-        else if(a==5){
+        else if(a==4){
             entities.add(new Tent(handler,x,y));
         }
-        else if(a==6){
+        else if(a==5){
             entities.add(new Lamp(handler,x,y));
         }
-        else if(a==7){
+        else if(a==6){
             entities.add(new Doorway(handler,x,y));
         }
     }
