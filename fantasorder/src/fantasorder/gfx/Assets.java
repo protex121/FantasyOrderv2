@@ -11,7 +11,7 @@ public class Assets {
             doorway, water01, water02,water03,water04,water05,water06,water07,water08,water09,
             bigtree,bigtrees,tree,trees,lamp,
             board01,board02,board03,tent,
-            redcrest01, redcrest02, knightstatue,
+            redcrest, knightstatue,
             redroof01, redroof02, woodenroof01, woodenroof02, 
             hayroof01, hayroof02, walls01,walls02,
             greenroof01, greenroof02,
@@ -222,8 +222,7 @@ public class Assets {
         greenroof02 = sheet.crop(288,46, width, height);
         
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_C.png"));
-        redcrest01 = sheet.crop(0,192,width,height);
-        redcrest02 = sheet.crop(0,240,width,height);
+        redcrest = sheet.crop(0,192,width,height*2);
         //roof besar coklat, dari pojok atas ke pojok bawah
         bigbrooflb = sheet.crop(624,144,width,height);
         bigbroofl = sheet.crop(624,192,width,height);

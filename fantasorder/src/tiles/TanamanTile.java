@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage;
 public class TanamanTile extends Tile{
     
     public TanamanTile(int id) {
-        super(Assets.tent, id);
+        super(Assets.tanaman, id);
     }
     
 }
