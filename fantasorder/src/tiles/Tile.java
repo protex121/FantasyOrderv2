@@ -85,6 +85,10 @@ public class Tile {
     public static Tile Stonewall03 = new Stonewall03Tile(76);
     public static Tile Stonewall04 = new Stonewall04Tile(77);
     public static Tile Stonewall05 = new Stonewall05Tile(78);
+    public static Tile Stone06 = new Stone06Tile(79);
+    public static Tile Stone07 = new Stone07Tile(80);
+    public static Tile Stone08 = new Stone08Tile(81);
+    public static Tile Stone09 = new Stone09Tile(82);
     public static Tile Cliff01 = new Cliff01Tile(83);
     public static Tile Cliff02 = new Cliff02Tile(84);
     public static Tile Cliff03 = new Cliff03Tile(85);
@@ -112,6 +116,11 @@ public class Tile {
     public static Tile Land02 = new Land02Tile(107);
     public static Tile Land03 = new Land03Tile(108);
     public static Tile Land04 = new Land04Tile(109);
+    public static Tile Stone10 = new Stone10Tile(110);
+    public static Tile Silverbox07 = new Silverbox07Tile(111);
+    public static Tile Silverbox05 = new Silverbox05Tile(112);
+    public static Tile Silverbox04 = new Silverbox04Tile(113);
+    public static Tile Silverbox02 = new Silverbox02Tile(114);
     
     public static final int tilewidth = 64,tileheight = 64;
     

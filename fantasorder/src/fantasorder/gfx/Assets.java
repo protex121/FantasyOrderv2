@@ -36,7 +36,7 @@ public class Assets {
             cliff03,cliff04,cliff05,cliff06, stair01,stair02, 
             cgrass01,cgrass02,cgrass03,cgrass04,cgrass05,cgrass06,cgrass07,cgrass08,cgrass09,
             cgrass10,cgrass11,cgrass12,cgrass13, rigcliff01, rigcliff02,
-            land01,land02,land03,land04,
+            land01,land02,land03,land04, stone06,stone07, stone08, stone09, stone10,
 
             pipes, roadsign, well, barrel, pot, bucket, wallhole,
             trunk, trunkg, log, gnome, hole, choppedlog, roadstone, bigstone, mushroom,
@@ -165,6 +165,11 @@ public class Assets {
         stone03 = sheet.crop(240,48,width,height);
         stone04 = sheet.crop(192,96,width,height);
         stone05 = sheet.crop(240,96,width,height);
+        stone06 = sheet.crop(192,60,width,height);
+        stone07 = sheet.crop(240,60,width,height);
+        stone08 = sheet.crop(205,48,width,height);
+        stone09 = sheet.crop(205,96,width,height);
+        stone10 = sheet.crop(205,60,width,height);
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/bgbattle.png"));
         bgbattle = sheet.crop(0, 0, 900, 585);
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_A5.png"));

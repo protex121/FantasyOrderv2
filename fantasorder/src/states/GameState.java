@@ -49,7 +49,7 @@ public class GameState extends State{
         
         setket(i);
         
-        world = new World(handler, "mapdesa.txt","entitydesa.txt", a); //load Map dari file TXT
+        world = new World(handler, "mapkota.txt","entitykota.txt", a); //load Map dari file TXT
         handler.setWorld(world);
         bgm = new AudioPlayer("/sound/bgm.wav");
         bgm.play();
@@ -103,7 +103,7 @@ public class GameState extends State{
             tiles adalah bagian gambar petak nya map
         */
         
-       //world.render(g);
+       world.render(g);
        //a.render(g);
     }
     

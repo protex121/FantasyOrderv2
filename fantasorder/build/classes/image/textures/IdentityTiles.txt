@@ -72,6 +72,15 @@
 71 - Bigbroofli
 72 - Bigbroofri
 73 - Bigbroofw
+74 - Stonewall01
+75 - Stonewall02
+76 - Stonewall03
+77 - Stonewall04
+78 - Stonewall05
+79 - Stone06
+80 - Stone07
+81 - Stone08
+82 - Stone09
 83 - Cliff01
 84 - Cliff02
 85 - Cliff03
@@ -99,3 +108,4 @@
 107 - Land02
 108 - Land03
 109 - Land04
+110 - Stone10

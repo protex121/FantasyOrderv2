@@ -86,7 +86,7 @@ public class Game implements Runnable{
         }
         
         //test case
-        g.drawImage(Assets.stonewall05, 50, 50, null);
+        //g.drawImage(Assets.silverbox02, 50, 50, null);
         //g.drawImage(Assets.archer_left[2], 100, 100, null);
         
 
