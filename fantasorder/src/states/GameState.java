@@ -15,12 +15,24 @@ import tiles.Tile;
 import world.World;
 
 public class GameState extends State{
+<<<<<<< HEAD
     
     //private Unit a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     private String[] entity = new String[4];
     private String[] namaMap = new String[4];
+=======
+
+<<<<<<< HEAD
+    private AudioPlayer bgm;
+    
+=======
+<<<<<<< HEAD
+    private Priest a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
+>>>>>>> origin/sion
     private World world;
     private Handler handler;
+    
+<<<<<<< HEAD
     /*
     public GameState(Handler handler) {
         super(handler);
@@ -33,10 +45,26 @@ public class GameState extends State{
     
     private Unit a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     
-
     public GameState(Handler handler,int i) {
-        super(handler);
+        super(handler);  
+        this.handler = handler;
+        
+=======
+    public GameState(Game game) {
+        super(game);
+        a = new Priest(game, 100, 100);
+        world = new World(game, "mapdesa.txt"); //load Map dari file TXT
+=======
+>>>>>>> zam
+    private Unit a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
+    
+    public GameState(Game game,int i) {
+        super(game);
+<<<<<<< HEAD
+>>>>>>> origin/sion
         //a = new Archer(game, 100, 100);
+        
+<<<<<<< HEAD
         namaMap[0]="mapdesa.txt";
         namaMap[1]="maphutan2.txt";
         namaMap[2]="maphutan2.txt";
@@ -53,8 +81,14 @@ public class GameState extends State{
         handler.setWorld(world);
         bgm = new AudioPlayer("/sound/bgm.wav");
         bgm.play();
+=======
         bgm = new AudioPlayer("/sound/epilogue.wav");
         //bgm.play();
+=======
+        a = new Archer(game, 100, 100);
+>>>>>>> origin/sion
+>>>>>>> zam
+>>>>>>> origin/sion
     }
     
     @Override
