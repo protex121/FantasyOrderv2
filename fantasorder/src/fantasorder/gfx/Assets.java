@@ -357,8 +357,7 @@ public class Assets {
         tilered = sheet.crop(144,192,width,height);
         tilestone1 = sheet.crop(240,96,width,height);
         tilestone2 = sheet.crop(192,192,width,height);
-        /*
-        */
+
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Inside_B.png"));
         windownoc = sheet.crop(0,96,width,height*2);
         windowwc = sheet.crop(48,96,width,height*2);

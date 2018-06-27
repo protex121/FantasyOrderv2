@@ -155,6 +155,10 @@ public class Tile {
     public static Tile Brickwall02 = new Brickwall02Tile(155);
     public static Tile Brickwall03 = new Brickwall03Tile(156);
     public static Tile Brickwall04 = new Brickwall04Tile(157);
+    public static Tile Woodv = new WoodvTile(158);
+    public static Tile Woodh = new WoodhTile(159);
+    public static Tile Tilestone1 = new Tilestone1Tile(160);
+    public static Tile Tilestone2 = new Tilestone2Tile(161);
 
     
     public static final int tilewidth = 64,tileheight = 64;
