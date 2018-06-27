@@ -1,0 +1,6 @@
+0 - Player
+1 - Tree
+2 - BigTree
+3 - Chimney
+4 - Window
+5 - Tent

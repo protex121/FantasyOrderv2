@@ -2,16 +2,13 @@ package fantasorder;
 
 import fantasorder.display.Display;
 import fantasorder.gfx.Assets;
-import static fantasorder.gfx.Assets.bigbroofl;
-import static fantasorder.gfx.Assets.greenroof01;
-import static fantasorder.gfx.Assets.woodwalls01;
 import fantasorder.gfx.GameCamera;
 import input.Input;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import states.GameState;
-import states.MenuState;
 import states.State;
+import states.battlestates;
 
 public class Game implements Runnable{
     
@@ -26,8 +23,8 @@ public class Game implements Runnable{
     private Graphics g;
     
     //Objek Panel
-    private State gameState;
-    private State menuState;
+    public State gameState;
+    public State battlestate;
     
     //Input
     private Input ip;
@@ -44,17 +41,22 @@ public class Game implements Runnable{
         this.title = title;
         ip = new Input();
     }
+    
+    int i;
+    public void setPlayer(int i){
+        this.i = i;
+    }
 
     private void init(){
         display = new Display(title, width, height);
         display.getFrame().addKeyListener(ip);
         Assets.init();
-        
-        gameCamera = new GameCamera(this,0,0);
         handler = new Handler(this);
-        
-        gameState = new GameState(handler); // this = class game karna parameter
-        menuState = new MenuState(handler);
+        gameCamera = new GameCamera(handler,0,0);
+
+        gameState = new GameState(handler,i); // this = class game karna parameter --> pindah ke dalam "PANEL" game
+
+        battlestate = new battlestates(handler);
         
         State.setState(gameState);
     }
@@ -82,22 +84,9 @@ public class Game implements Runnable{
         if(State.getState() != null){
             State.getState().render(g);    
         }
+        
         //test case
-/*        
-        g.drawImage(Assets.cgrass01, 0, 0, null);
-        g.drawImage(Assets.cgrass02, 0, 48, null);
-        g.drawImage(Assets.cgrass03, 0, 96, null);
-        g.drawImage(Assets.cgrass04, 48, 0, null);
-        g.drawImage(Assets.cgrass05, 48, 48, null);
-        g.drawImage(Assets.cgrass06, 48, 96, null);
-        g.drawImage(Assets.cgrass07, 96, 0, null);
-        g.drawImage(Assets.cgrass08, 96, 48, null);
-        g.drawImage(Assets.cgrass09, 96, 96, null);
-*/        
-
-
-        //g.drawImage(Assets.priest_down[2], 10, 10, null);
-        //g.drawImage(Assets.archer_left[1], 50, 50, null);
+        g.drawImage(Assets.stonewall05, 50, 50, null);
         //g.drawImage(Assets.archer_left[2], 100, 100, null);
         
 
@@ -139,7 +128,6 @@ public class Game implements Runnable{
             }
             
         }
-        
         stop();
     }
     
@@ -147,8 +135,16 @@ public class Game implements Runnable{
         return ip;
     }
     
+    public boolean isInput(){
+        return ip.isInput();
+    }
+    
     public GameCamera getGameCamera(){
         return gameCamera;
+    }
+    
+    public void setGameCamera(GameCamera a){
+        this.gameCamera=a;
     }
     
     public int getWidth(){
