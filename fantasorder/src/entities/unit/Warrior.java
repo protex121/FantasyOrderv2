@@ -3,13 +3,19 @@ package entities.unit;
 import fantasorder.Handler;
 import fantasorder.gfx.Animation;
 import fantasorder.gfx.Assets;
+<<<<<<< HEAD
 import java.awt.Color;
+=======
+import fantasorder.gfx.AudioPlayer;
+>>>>>>> origin/sion
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
+import java.util.HashMap;
 
 public class Warrior extends Unit{
     private Handler handler;
     private Animation anim_down,anim_up,anim_left,anim_right;
+    private HashMap<String, AudioPlayer> sfx;
     
     public Warrior(Handler handler, float x,float y, int ket) {
         super(handler,x, y, Unit.width_semula, Unit.height_semula, ket);
@@ -25,6 +31,16 @@ public class Warrior extends Unit{
         anim_up = new Animation(500, Assets.warrior_up);
         anim_right = new Animation(500, Assets.warrior_right);
         anim_left = new Animation(500, Assets.warrior_left);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        
+        sfx = new HashMap<String, AudioPlayer>();
+        sfx.put("walk", Assets.walk);
+=======
+>>>>>>> origin/sion
+>>>>>>> zam
+>>>>>>> origin/sion
     }
     
     @Override
@@ -55,6 +71,7 @@ public class Warrior extends Unit{
         xMove = 0;
         yMove = 0;
         
+<<<<<<< HEAD
         if(handler.getInput().atas){
             yMove = -speed;
         }
@@ -65,6 +82,22 @@ public class Warrior extends Unit{
             xMove = -speed;
         }
         else if(handler.getInput().kanan){
+=======
+        if(game.getInput().atas){
+            sfx.get("walk").play();
+            yMove = -speed;
+        }
+        else if(game.getInput().bawah){
+            sfx.get("walk").play();
+            yMove = speed;
+        }
+        else if(game.getInput().kiri){
+            sfx.get("walk").play();
+            xMove = -speed;
+        }
+        else if(game.getInput().kanan){
+            sfx.get("walk").play();
+>>>>>>> origin/sion
             xMove = speed;
         }
         
