@@ -190,7 +190,31 @@ public class Tile {
     public static Tile Boxstack = new BoxstackTile(190);
     public static Tile Boxcarrot = new BoxcarrotTile(191);
     public static Tile Sack = new SackTile(192);
-
+    public static Tile Teapot = new TeapotTile(193);
+    public static Tile Beer = new BeerTile(194);
+    public static Tile Wine = new WineTile(195);
+    public static Tile Paper = new PaperTile(196);
+    public static Tile Grassbox = new GrassboxTile(197);
+    public static Tile Flowerpot = new FlowerpotTile(198);
+    public static Tile Bottle = new BottleTile(199);
+    public static Tile Elixirb = new ElixirbTile(200);
+    public static Tile Elixirr = new ElixirrTile(201);
+    public static Tile Bread = new BreadTile(202);
+    public static Tile Doll = new DollTile(203);
+    public static Tile Sword = new SwordTile(204);
+    public static Tile Swordx = new SwordxTile(205);
+    public static Tile Axe = new AxeTile(206);
+    public static Tile Tomb = new TombTile(207);
+    public static Tile Swordrack1 = new Swordrack1Tile(208);
+    public static Tile Swordrack2 = new Swordrack2Tile(209);
+    public static Tile Tombrack = new TombrackTile(210);
+    public static Tile Shield1 = new Shield1Tile(211);
+    public static Tile Shield2 = new Shield2Tile(212);
+    public static Tile Forge = new ForgeTile(213);
+    public static Tile Helmet = new HelmetTile(214);
+    public static Tile Hat = new HatTile(215);
+    public static Tile Armor = new ArmorTile(216);
+    public static Tile Coat = new CoatTile(217);
     
     public static final int tilewidth = 64,tileheight = 64;
     

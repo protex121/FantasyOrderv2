@@ -401,7 +401,7 @@ public class Assets {
         flowerpot = sheet.crop(192,480,width,height);
         bottle = sheet.crop(192,576,width,height);
         elixirb = sheet.crop(288,576,width,height);
-        elixirb = sheet.crop(336,576,width,height);
+        elixirr = sheet.crop(336,576,width,height);
         bread = sheet.crop(144,624,width,height);
         doll = sheet.crop(0,672,width,height);
         
