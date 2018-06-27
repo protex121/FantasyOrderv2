@@ -44,17 +44,27 @@ public class Game implements Runnable{
         this.title = title;
         ip = new Input();
     }
+    
+    int i;
+    public void setPlayer(int i){
+        this.i = i;
+    }
 
     private void init(){
         display = new Display(title, width, height);
         display.getFrame().addKeyListener(ip);
         Assets.init();
         
+<<<<<<< HEAD
         handler = new Handler(this);
         gameCamera = new GameCamera(handler,0,0);        
         
         gameState = new GameState(handler); // this = class game karna parameter --> pindah ke dalam "PANEL" game
         menuState = new MenuState(handler);
+=======
+        gameState = new GameState(this,i); // this = class game karna parameter
+        menuState = new MenuState(this);
+>>>>>>> origin/sion
         
         State.setState(gameState);
     }

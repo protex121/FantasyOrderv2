@@ -1,12 +1,18 @@
 package fantasorder;
 
+import fantasorder.gfx.AudioPlayer;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+<<<<<<< HEAD
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+=======
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+>>>>>>> origin/sion
 
 public class frame extends javax.swing.JFrame {
 
@@ -14,9 +20,74 @@ public class frame extends javax.swing.JFrame {
     int height = screenSize.height;
     int width = screenSize.width;
     
+    private AudioPlayer bgm;
+    private AudioPlayer hover;
+    private AudioPlayer click;
+    
     public frame() {
         initComponents();
         this.setSize(width, height);
+        
+        btnlogin.setOpaque(false);
+        btnlogin.setContentAreaFilled(false);
+        btnlogin.setBorderPainted(false);
+        
+        btnsign.setOpaque(false);
+        btnsign.setContentAreaFilled(false);
+        btnsign.setBorderPainted(false);
+        
+        btnexit.setOpaque(false);
+        btnexit.setContentAreaFilled(false);
+        btnexit.setBorderPainted(false);
+        
+        bgm = new AudioPlayer("/sound/bgm.wav");
+        bgm.play();
+        hover = new AudioPlayer("/sound/btnhover.wav");
+        click = new AudioPlayer("/sound/btnclick.wav");
+        btnlogin.addMouseListener(new MouseAdapter(){
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                super.mouseEntered(e); //To change body of generated methods, choose Tools | Templates.
+                hover.play();
+                hover.stop();
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                super.mouseExited(e); //To change body of generated methods, choose Tools | Templates.
+                hover.stop();
+            }
+        });
+        btnsign.addMouseListener(new MouseAdapter(){
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                super.mouseEntered(e); //To change body of generated methods, choose Tools | Templates.
+                hover.play();
+                hover.stop();
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                super.mouseExited(e); //To change body of generated methods, choose Tools | Templates.
+                hover.stop();
+            }
+        });
+        btnexit.addMouseListener(new MouseAdapter(){
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                super.mouseEntered(e); //To change body of generated methods, choose Tools | Templates.
+                hover.play();
+                hover.stop();
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                super.mouseExited(e); //To change body of generated methods, choose Tools | Templates.
+                hover.stop();
+            }
+        });
+        
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -39,7 +110,7 @@ public class frame extends javax.swing.JFrame {
                 btnloginActionPerformed(evt);
             }
         });
-        getContentPane().add(btnlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 350, 410, 50));
+        getContentPane().add(btnlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 480, 50));
 
         btnsign.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/login_res/signin.png"))); // NOI18N
         btnsign.setToolTipText("");
@@ -49,7 +120,7 @@ public class frame extends javax.swing.JFrame {
                 btnsignActionPerformed(evt);
             }
         });
-        getContentPane().add(btnsign, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 430, 410, 50));
+        getContentPane().add(btnsign, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 430, 480, 50));
 
         btnexit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/login_res/exit.png"))); // NOI18N
         btnexit.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/image/login_res/exithover.png"))); // NOI18N
@@ -58,7 +129,7 @@ public class frame extends javax.swing.JFrame {
                 btnexitActionPerformed(evt);
             }
         });
-        getContentPane().add(btnexit, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 510, 410, 50));
+        getContentPane().add(btnexit, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 510, 480, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/login_res/bg.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -68,15 +139,29 @@ public class frame extends javax.swing.JFrame {
     
     //untuk newgame
     private void btnloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnloginActionPerformed
+        click.play();
         this.setVisible(false);
         this.dispose();
-        Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
-        game.start();
+        bgm.stop();
+        //click.stop();
+        framepick f = new framepick();
+        f.setVisible(true);
+        
     }//GEN-LAST:event_btnloginActionPerformed
     
 //untuk load
     private void btnsignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsignActionPerformed
         //belum dibuat
+        click.play();
+        this.setVisible(false);
+        this.dispose();
+        bgm.stop();
+        //click.stop();
+        
+        Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
+        game.setPlayer(1); // berasal dari load
+        game.start();
+        
     }//GEN-LAST:event_btnsignActionPerformed
 
  /*       public void save(){
@@ -113,6 +198,7 @@ public class frame extends javax.swing.JFrame {
     }*/
     
     private void btnexitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexitActionPerformed
+        click.play();
         System.exit(0);
     }//GEN-LAST:event_btnexitActionPerformed
 
