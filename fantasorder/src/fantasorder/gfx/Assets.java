@@ -5,11 +5,9 @@ import java.awt.image.BufferedImage;
 public class Assets {
     //motong gambar belum lengkap
     private static final int width = 50, height = 50;
-<<<<<<< HEAD
     public static AudioPlayer walk;
     public static BufferedImage dirt, grass, stone, tree, bgbattle;
-=======
-<<<<<<< HEAD
+
     public static BufferedImage redroof02,
             lamp01,lamp02,lamp03,
             doorway, water01, water02,water03,water04,water05,water06,water07,water08,water09,
@@ -29,22 +27,17 @@ public class Assets {
             woodwalls03, woodwalls01, woodwalls05,
             woodwalls06 , woodenwall06,woodwalls02,
             woodenwall05,woodenwall01,woodenwall02, 
-            woodenwall03, woodenwall04 ,player1, 
-            player2, player3, dirt01, grass, stone01,
-            stone02,stone03,stone04,stone05, tree, 
+            woodenwall03, woodenwall04, dirt01,
             dirt02, dirt03,dirt04,dirt05,dirt06, dirt07,dirt08,dirt09, dirt10,
             cliff01,cliff02,
             cliff03,cliff04,cliff05,cliff06, stair01,stair02, 
-            land01,land02,land03,land04;
+            land01,land02,land03,land04,
+            stone01,stone02,stone03,stone04,stone05;
 
-=======
-    public static BufferedImage dirt, grass, stone, tree;
->>>>>>> zam
     public static BufferedImage[] archer_down, archer_up, archer_left, archer_right;
     public static BufferedImage[] priest_down, priest_up, priest_left, priest_right;
     public static BufferedImage[] warrior_down, warrior_up, warrior_left, warrior_right;
     
->>>>>>> origin/sion
     public static void init(){
         
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/archer_walk.png"));
@@ -124,14 +117,13 @@ public class Assets {
         warrior_up[2] = sheet.crop(100, 145, width, height);
         
         
-        sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_A2.png"));
-        grass = sheet.crop(0, 0, width, height);
-<<<<<<< HEAD
-        dirt = sheet.crop(94, 0, width, height);
+        
+        
         
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/bgbattle.png"));
         bgbattle = sheet.crop(0, 0, 900, 585);
-=======
+
+        sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_A2.png"));
         dirt01 = sheet.crop(95, 0, width, height);
         dirt02 = sheet.crop(95,47,width,height);
         dirt03 = sheet.crop(142,47,width,height);
@@ -230,7 +222,6 @@ public class Assets {
         water07 = sheet.crop(22,52,width,height);
         water08 = sheet.crop(25,94,width,height);
         water09 = sheet.crop(25,72,width,height);
->>>>>>> zam
     }
     
 }

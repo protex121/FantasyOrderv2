@@ -13,26 +13,19 @@ import world.World;
 
 public class GameState extends State{
 
-<<<<<<< HEAD
     private AudioPlayer bgm;
     
-=======
-<<<<<<< HEAD
-    private Priest a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     private World world;
     
-    public GameState(Game game) {
-        super(game);
-        a = new Priest(game, 100, 100);
-        world = new World(game, "mapdesa.txt"); //load Map dari file TXT
-=======
->>>>>>> zam
+  
+
     private Unit a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     
     public GameState(Game game,int i) {
         super(game);
-<<<<<<< HEAD
-        //a = new Archer(game, 100, 100);
+        
+        world = new World(game, "mapdesa.txt"); //load Map dari file TXT
+        
         if(i == 1){
             a = new Warrior(game, 100, 100);
         }
@@ -45,10 +38,6 @@ public class GameState extends State{
         
         bgm = new AudioPlayer("/sound/epilogue.wav");
         //bgm.play();
-=======
-        a = new Archer(game, 100, 100);
->>>>>>> origin/sion
->>>>>>> zam
     }
 
     @Override

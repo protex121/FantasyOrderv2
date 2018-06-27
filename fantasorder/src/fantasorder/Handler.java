@@ -16,11 +16,11 @@ public class Handler {
     }
     
     public int getWidth(){
-        return game.width;
+        return game.getWidth();
     }
     
     public int getHeight(){
-        return game.height;
+        return game.getHeight();
     }
     
     public Game getGame() {

@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import states.fbattlestates;
 
 public class framepick extends javax.swing.JFrame {
 
@@ -76,25 +77,32 @@ public class framepick extends javax.swing.JFrame {
     private void btnwarriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnwarriorActionPerformed
         this.setVisible(false);
         this.dispose();
-        Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
-        game.setPlayer(1);
-        game.start();
+        
+        fbattlestates f = new fbattlestates(1);
+        f.setVisible(true);
+        //Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
+        //game.setPlayer(1);
+        //game.start();
     }//GEN-LAST:event_btnwarriorActionPerformed
 
     private void btnpriestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpriestActionPerformed
         this.setVisible(false);
         this.dispose();
-        Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
-        game.setPlayer(2);
-        game.start();
+        fbattlestates f = new fbattlestates(2);
+        f.setVisible(true);
+        //Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
+        //game.setPlayer(2);
+        //game.start();
     }//GEN-LAST:event_btnpriestActionPerformed
 
     private void btnarcherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnarcherActionPerformed
         this.setVisible(false);
         this.dispose();
-        Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
-        game.setPlayer(3);
-        game.start();
+        fbattlestates f = new fbattlestates(3);
+        f.setVisible(true);
+        //Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
+        //game.setPlayer(3);
+        //game.start();
     }//GEN-LAST:event_btnarcherActionPerformed
 
     public static void main(String args[]) {

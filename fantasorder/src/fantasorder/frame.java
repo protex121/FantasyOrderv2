@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import states.fbattlestates;
 
 public class frame extends javax.swing.JFrame {
 
@@ -145,9 +146,11 @@ public class frame extends javax.swing.JFrame {
         this.setVisible(false);
         this.dispose();
         bgm.stop();
-        Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
-        game.setPlayer(1); // berasal dari load
-        game.start();
+        //Game game = new Game("Fantasy Order",width,height); // pindah ke frame game
+        //game.setPlayer(1); // berasal dari load
+        //game.start();
+        //fbattlestates f = new fbattlestates();
+        //f.setVisible(true);
     }//GEN-LAST:event_btnsignActionPerformed
 
     private void btnexitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexitActionPerformed

@@ -11,7 +11,6 @@ import java.awt.Graphics;
 
 public class battlestates extends State{
 
-    private Button[] options;
     private int currSelection;
     
     Unit a;
@@ -20,8 +19,7 @@ public class battlestates extends State{
         super(game);
         a = new Archer(game,100,100);
     }
-    
-    
+   
     @Override
     public void tick() {
         

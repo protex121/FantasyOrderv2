@@ -9,33 +9,28 @@ import java.awt.image.BufferedImage;
 import java.util.HashMap;
 
 public class Archer extends Unit{
-<<<<<<< HEAD
-    
-    public Archer(Game game, float x,float y) {
-        super(game, x, y, Unit.width_semula, Unit.height_semula);
-=======
 
     private Animation anim_down,anim_up,anim_left,anim_right;
     private Game game;
+    
+    
     
     private HashMap<String,AudioPlayer> sfx;
     
     
     public Archer(Game game, float x,float y) {
-        super(x, y, Unit.width_semula, Unit.height_semula);
+        super(game, x, y, Unit.width_semula, Unit.height_semula);
         this.game = game;
+        this.skill=10;
+        this.skilln="Windshot";
         
         anim_down = new Animation(500, Assets.archer_down);
         anim_up = new Animation(500, Assets.archer_up);
         anim_right = new Animation(500, Assets.archer_right);
         anim_left = new Animation(500, Assets.archer_left);
-<<<<<<< HEAD
         
         sfx = new HashMap<String, AudioPlayer>();
         sfx.put("walk", Assets.walk);
-=======
->>>>>>> origin/sion
->>>>>>> zam
     }
 
     @Override
@@ -79,9 +74,6 @@ public class Archer extends Unit{
 
     @Override
     public void render(Graphics g) {
-<<<<<<< HEAD
-        g.drawImage(Assets.player1, (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
-=======
         g.drawImage(getCurrAnimFrame(), (int)x, (int)y, width, height, null);
     }
     
@@ -98,7 +90,7 @@ public class Archer extends Unit{
         else{
             return anim_down.getCurrFrame();
         }
->>>>>>> origin/sion
+
     }
     
 }

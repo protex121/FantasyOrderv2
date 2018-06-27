@@ -51,13 +51,9 @@ public class Game implements Runnable{
         display.getFrame().addKeyListener(ip);
         Assets.init();
         
-<<<<<<< HEAD
-        gameState = new GameState(this,i); // this = class game karna parameter
-=======
         gameCamera = new GameCamera(this,0,0);
         
-        gameState = new GameState(this); // this = class game karna parameter
->>>>>>> zam
+        gameState = new GameState(this,i); // this = class game karna parameter
         menuState = new MenuState(this);
         battlestate = new battlestates(this);
         
@@ -88,16 +84,13 @@ public class Game implements Runnable{
             State.getState().render(g);    
         }
         
-<<<<<<< HEAD
         //g.drawImage(Assets.stone01, 70, 10, null);
         //g.drawImage(Assets.water09,120,10,null);
-=======
         //test case
         //g.drawImage(Assets.archer_left[0], 10, 10, null);
         //g.drawImage(Assets.archer_left[1], 50, 50, null);
         //g.drawImage(Assets.archer_left[2], 100, 100, null);
         
->>>>>>> origin/sion
         //disini end nya
         bs.show();
         g.dispose();
