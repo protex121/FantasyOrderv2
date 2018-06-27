@@ -12,18 +12,29 @@ public abstract class Unit extends Entity{
     public static final int width_semula = 64;
     public static final int height_semula = 64;
     
+    protected int job = 3;
+    protected int lokasi;
     protected int darah;
     protected float speed;
     protected float xMove,yMove;
     
-    public Unit(Handler handler, float x, float y,int width, int height) {
+    public Unit(Handler handler, float x, float y,int width, int height, int job) {
         super(handler, x, y, width, height);
         this.darah = darah_semula;
         this.speed = speed_semula;
         this.xMove = 0;
         this.yMove = 0;
+        this.lokasi = 0;
+        this.job = job;
     }
     
+    public int getLokasi(){
+        return lokasi;
+    }
+    
+    public void setLokasi(int lokasi){
+        this.lokasi = lokasi;
+    }
     public void move(){
         if(!checkEntityCollision(xMove, 0f)){
             moveX();

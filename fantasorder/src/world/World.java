@@ -13,6 +13,7 @@ import tiles.Tile;
 
 public class World {
     
+    private boolean battle=false;
     private Handler handler;
     private int width, height;
     private int spawnX, spawnY;
@@ -21,12 +22,12 @@ public class World {
     //entities
     private EntityManager entityManager;
     
-    public World(Handler handler, String path1, String path2, String path3, String path4, Unit a){
+    public World(Handler handler, String path1, String path2, Unit a){
         this.handler = handler;
         entityManager = new EntityManager(handler, a);
         
         loadWorld(path1);
-        //loadTreeEntity(path2);
+        loadTreeEntity(path2);
         
         entityManager.getPlayer().setX(spawnX);
         entityManager.getPlayer().setY(spawnY);
@@ -34,6 +35,10 @@ public class World {
     
     public void tick(){
         entityManager.tick();
+    }
+    
+    public boolean isBattle(){
+        return battle;
     }
     
     public void render(Graphics g){
@@ -99,16 +104,23 @@ public class World {
     private void loadWorld(String path){
         String file = Utils.loadFileAsString(path);
         String[] tokens = file.split("\\s+");
-        width = Utils.parseInt(tokens[0]);
-        height = Utils.parseInt(tokens[1]);
-        spawnX = Utils.parseInt(tokens[2]) * Tile.tilewidth;
-        spawnY = Utils.parseInt(tokens[3]) * Tile.tileheight;
+        
+        if(Utils.parseInt(tokens[0]) == 1){
+            battle = true;
+        }
+        else{
+            battle = false;
+        }
+        width = Utils.parseInt(tokens[1]);
+        height = Utils.parseInt(tokens[2]);
+        spawnX = Utils.parseInt(tokens[3]) * Tile.tilewidth;
+        spawnY = Utils.parseInt(tokens[4]) * Tile.tileheight;
         
         tiles = new int[height][width];
         
         for(int i=0;i<height;i++){
             for(int j=0;j<width;j++){
-                tiles[i][j]=Utils.parseInt(tokens[(j+i*width)+4]);
+                tiles[i][j]=Utils.parseInt(tokens[(j+i*width)+5]);
             }
         }
     }

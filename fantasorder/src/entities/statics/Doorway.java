@@ -23,6 +23,6 @@ public class Doorway extends StaticEntity{
     }
     
     public void render(Graphics g){
-        //g.drawImage(Assets.tent,(int)(x - handler.getGameCamera().getxOffset()), (int) (y - handler.getGameCamera().getyOffset()),width,height,null);
+        g.drawImage(Assets.doorway,(int)(x - handler.getGameCamera().getxOffset()), (int) (y - handler.getGameCamera().getyOffset()),width,height,null);
     }
 }

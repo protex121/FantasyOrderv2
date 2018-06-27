@@ -10,8 +10,8 @@ public class Priest extends Unit{
     private Handler handler;
     private Animation anim_down,anim_up,anim_left,anim_right;
     
-    public Priest(Handler handler, float x,float y) {
-        super(handler,x, y, Unit.width_semula, Unit.height_semula);
+    public Priest(Handler handler, float x,float y, int ket) {
+        super(handler,x, y, Unit.width_semula, Unit.height_semula, ket);
         this.handler = handler;
         
         //collision box

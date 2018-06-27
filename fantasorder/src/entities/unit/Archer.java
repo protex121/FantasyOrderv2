@@ -11,8 +11,8 @@ public class Archer extends Unit{
     private Handler handler;
     
     
-    public Archer(Handler handler, float x,float y) {
-        super(handler, x, y, Unit.width_semula, Unit.height_semula);
+    public Archer(Handler handler, float x,float y, int ket) {
+        super(handler, x, y, Unit.width_semula, Unit.height_semula, ket);
         this.handler = handler;
         
         //collision box
