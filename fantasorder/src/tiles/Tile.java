@@ -80,6 +80,11 @@ public class Tile {
     public static Tile Bigbroofli = new BigbroofliTile(71);
     public static Tile Bigbroofri = new BigbroofriTile(72);
     public static Tile Bigbroofw = new BigbroofwTile(73);
+    public static Tile Stonewall01 = new Stonewall01Tile(74);
+    public static Tile Stonewall02 = new Stonewall02Tile(75);
+    public static Tile Stonewall03 = new Stonewall03Tile(76);
+    public static Tile Stonewall04 = new Stonewall04Tile(77);
+    public static Tile Stonewall05 = new Stonewall05Tile(78);
     public static Tile Cliff01 = new Cliff01Tile(83);
     public static Tile Cliff02 = new Cliff02Tile(84);
     public static Tile Cliff03 = new Cliff03Tile(85);
