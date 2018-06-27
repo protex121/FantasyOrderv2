@@ -297,6 +297,7 @@ public class Assets {
         water07 = sheet.crop(24,48,width,height);
         water08 = sheet.crop(24,96,width,height);
         water09 = sheet.crop(24,72,width,height);
+        //batch 5.1 sampai sini
         
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Inside_A4.png"));
         silverbox01 = sheet.crop(480,48,width,height);
