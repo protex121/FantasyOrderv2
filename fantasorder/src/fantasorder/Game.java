@@ -94,8 +94,6 @@ public class Game implements Runnable{
         g.drawImage(Assets.cgrass08, 96, 48, null);
         g.drawImage(Assets.cgrass09, 96, 96, null);
 */        
-        g.drawImage(Assets.vinesa01, 48, 96, null);
-        g.drawImage(Assets.vinesa02, 48, 144, null);
 
 
         //g.drawImage(Assets.priest_down[2], 10, 10, null);
