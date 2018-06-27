@@ -79,6 +79,21 @@ public class Tile {
     public static Tile Redroof02 = new Redroof02Tile(70);
     public static Tile Greenroof01 = new Greenroof01Tile(71);
     public static Tile Greenroof02 = new Greenroof02Tile(72);
+    public static Tile Redcrest01 = new Greenroof02Tile(73);
+    public static Tile Redcrest02 = new Greenroof02Tile(74);
+    public static Tile Bigbrooflb = new Greenroof02Tile(75);
+    public static Tile Bigbroofl = new Greenroof02Tile(76);
+    public static Tile Bigbrooflo = new Greenroof02Tile(77);
+    public static Tile Bigbroofb = new Greenroof02Tile(78);
+    public static Tile Bigbroofc = new Greenroof02Tile(79);
+    public static Tile Bigbroofd = new Greenroof02Tile(80);
+    public static Tile Bigbroofrb = new Greenroof02Tile(81);
+    public static Tile Bigbroofr = new Greenroof02Tile(82);
+    public static Tile Bigbroofro = new Greenroof02Tile(83);
+    public static Tile Bigbroofli = new Greenroof02Tile(84);
+    public static Tile Bigbroofri = new Greenroof02Tile(85);
+    public static Tile Bigbroofw = new Greenroof02Tile(86);
+    public static Tile Knightstatue = new Greenroof02Tile(87);
    
     
     public static final int tilewidth = 64,tileheight = 64;

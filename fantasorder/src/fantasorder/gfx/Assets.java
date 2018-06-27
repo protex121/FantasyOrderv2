@@ -155,7 +155,6 @@ public class Assets {
         dirt04 = sheet.crop(96,96,width,height);
         dirt05 = sheet.crop(144,96,width,height);
         dirt06 = sheet.crop(144,48,width,height);
-        //buat apa? numpuk 03-06
         dirt07 = sheet.crop(96,72,width,height);
         dirt08 = sheet.crop(130,94,width,height);
         dirt09 = sheet.crop(143,70, width, height);
@@ -165,6 +164,7 @@ public class Assets {
         stone03 = sheet.crop(240,48,width,height);
         stone04 = sheet.crop(192,96,width,height);
         stone05 = sheet.crop(240,96,width,height);
+        
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_A5.png"));
         cliff01 = sheet.crop(0,672,width,height);
         cliff02 = sheet.crop(0,720,width,height);
@@ -225,6 +225,7 @@ public class Assets {
         redroof02 = sheet.crop(0,46, width, height);
         greenroof01 = sheet.crop(288,0,width,height);
         greenroof02 = sheet.crop(288,46, width, height);
+        
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_C.png"));
         redcrest01 = sheet.crop(0,192,width,height);
         redcrest02 = sheet.crop(0,240,width,height);
@@ -242,6 +243,7 @@ public class Assets {
         bigbroofri = sheet.crop(576,336,width,height);//menjorok kedalam
         bigbroofw = sheet.crop(528,336,width,height);
         knightstatue = sheet.crop(0,480,width,height*2);
+
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_B.png"));
         tent01 = sheet.crop(384,480,width,height);
         tent02 = sheet.crop(384,528,width,height);
