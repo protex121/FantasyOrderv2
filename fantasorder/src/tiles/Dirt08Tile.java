@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/alvin
 package tiles;
 
 import fantasorder.gfx.Assets;

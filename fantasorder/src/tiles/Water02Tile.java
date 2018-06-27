@@ -3,6 +3,7 @@ package tiles;
 import fantasorder.gfx.Assets;
 import java.awt.image.BufferedImage;
 
+<<<<<<< HEAD
 public class Water02Tile extends Tile {
     
     public Water02Tile(int id) {
@@ -14,3 +15,12 @@ public class Water02Tile extends Tile {
         return true;
     }
 }
+=======
+public class Water02Tile extends Tile{
+    
+    public Water02Tile(int id) {
+        super(Assets.well, id);
+    }
+    
+}
+>>>>>>> origin/alvin
