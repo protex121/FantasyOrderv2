@@ -8,7 +8,7 @@ import tiles.Tile;
 public abstract class Unit extends Entity{
     
     public static final int darah_semula = 10;
-    public static final float speed_semula = 3.0f;
+    public static final float speed_semula = 5.0f;
     public static final int width_semula = 64;
     public static final int height_semula = 64;
     

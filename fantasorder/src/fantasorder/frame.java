@@ -3,16 +3,13 @@ package fantasorder;
 import fantasorder.gfx.AudioPlayer;
 import java.awt.Dimension;
 import java.awt.Toolkit;
-<<<<<<< HEAD
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-=======
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
->>>>>>> origin/sion
 
 public class frame extends javax.swing.JFrame {
 

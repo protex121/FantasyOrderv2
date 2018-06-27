@@ -10,7 +10,6 @@ import input.Input;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import states.GameState;
-import states.MenuState;
 import states.State;
 
 public class Game implements Runnable{
@@ -26,8 +25,8 @@ public class Game implements Runnable{
     private Graphics g;
     
     //Objek Panel
-    private State gameState;
-    private State menuState;
+    public State gameState;
+    public State menuState;
     
     //Input
     private Input ip;
@@ -55,16 +54,10 @@ public class Game implements Runnable{
         display.getFrame().addKeyListener(ip);
         Assets.init();
         
-<<<<<<< HEAD
         handler = new Handler(this);
-        gameCamera = new GameCamera(handler,0,0);        
-        
-        gameState = new GameState(handler); // this = class game karna parameter --> pindah ke dalam "PANEL" game
-        menuState = new MenuState(handler);
-=======
-        gameState = new GameState(this,i); // this = class game karna parameter
-        menuState = new MenuState(this);
->>>>>>> origin/sion
+        gameCamera = new GameCamera(handler,0,0);
+
+        gameState = new GameState(handler,i); // this = class game karna parameter --> pindah ke dalam "PANEL" game
         
         State.setState(gameState);
     }

@@ -3,29 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/Window.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/Chimney.java</file>
             <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/world/World.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/Entity.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/fantasorder/gfx/Assets.java</file>
             <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/EntityManager.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/Tent.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/Lamp.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/BigTree.java</file>
             <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/states/GameState.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/Doorway.java</file>
-            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/entities/statics/Tree.java</file>
-=======
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/gfx/Assets.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/states/GameState.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/framepick.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/gfx/AudioPlayer.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/Game.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/Fantasorder.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/fantasorder/frame.java</file>
-            <file>file:/Users/Sion/Desktop/FantasyOrderv2/fantasorder/src/entities/unit/Unit.java</file>
->>>>>>> origin/sion
+            <file>file:/C:/Users/Zamorano/Downloads/FantasyOrderv2/fantasorder/src/tiles/Tile.java</file>
         </group>
     </open-files>
 </project-private>

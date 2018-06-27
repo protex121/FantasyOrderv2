@@ -44,6 +44,15 @@ public class Tile {
     public static Tile Walls04 = new Walls04Tile(35);
     public static Tile Redroof01 = new Redroof01Tile(36);
     public static Tile Redroof02 = new Redroof02Tile(37);
+    public static Tile Water01 = new Water01Tile(38);
+    public static Tile Water02 = new Water02Tile(39);
+    public static Tile Water03 = new Water03Tile(40);
+    public static Tile Water04 = new Water04Tile(41);
+    public static Tile Water05 = new Water05Tile(42);
+    public static Tile Water06 = new Water06Tile(43);
+    public static Tile Water07 = new Water07Tile(44);
+    public static Tile Water08 = new Water08Tile(45);
+    public static Tile Water09 = new Water09Tile(46);
     
     public static final int tilewidth = 64,tileheight = 64;
     

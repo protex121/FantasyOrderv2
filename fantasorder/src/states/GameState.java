@@ -14,42 +14,53 @@ import tiles.Tile;
 import world.World;
 
 public class GameState extends State{
-<<<<<<< HEAD
+    
     //private Unit a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     private World world;
     
+    /*
     public GameState(Handler handler) {
         super(handler);
         world = new World(handler, "mapdesa.txt","entitydesa.txt","",""); //load Map dari file TXT
         handler.setWorld(world);
         //a = new Warrior(handler, 100, 100);
-=======
+    }*/
 
     private AudioPlayer bgm;
     
     private Unit a; // ini nanti yang dimainkan bisa pindah ke object unit dulu
     
-    public GameState(Game game,int i) {
-        super(game);
+    public GameState(Handler handler,int i) {
+        super(handler);        
+        
         //a = new Archer(game, 100, 100);
+        
         if(i == 1){
-            a = new Warrior(game, 100, 100);
+            a = new Warrior(handler, 100, 100);
         }
         else if(i == 2){
-            a = new Priest(game, 100, 100);
+            a = new Priest(handler, 100, 100);
         }
         else if(i == 3){
-            a = new Archer(game, 100, 100);
+            a = new Archer(handler, 100, 100);
         }
         
+        world = new World(handler, "maphutan.txt","entityhutan.txt","","", a); //load Map dari file TXT
+        handler.setWorld(world);
         bgm = new AudioPlayer("/sound/bgm.wav");
         bgm.play();
->>>>>>> origin/sion
     }
     
     @Override
     public void tick() {
+        int a = (int)(Math.random()*101+1);
+        
         world.tick();
+        
+        if(a < 20){
+            System.out.println("game");
+        }
+        
         //a.tick();
     }
 
@@ -66,14 +77,19 @@ public class GameState extends State{
     
     public void setket(int ket){
         if(ket == 1){
-            a = new Warrior(game, 100, 100);
+            a = new Warrior(handler, 100, 100);
         }
         else if(ket == 2){
-            a = new Priest(game, 100, 100);
+            a = new Priest(handler, 100, 100);
         }
         else if(ket == 3){
-            a = new Archer(game, 100, 100);
+            a = new Archer(handler, 100, 100);
         }
     }
+    
+    public void goBattle(){
+    
+    }
+    
     
 }

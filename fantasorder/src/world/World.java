@@ -21,12 +21,12 @@ public class World {
     //entities
     private EntityManager entityManager;
     
-    public World(Handler handler, String path1, String path2, String path3, String path4){
+    public World(Handler handler, String path1, String path2, String path3, String path4, Unit a){
         this.handler = handler;
-        entityManager = new EntityManager(handler, new Warrior(handler,100,100));
+        entityManager = new EntityManager(handler, a);
         
         loadWorld(path1);
-        loadTreeEntity(path2);
+        //loadTreeEntity(path2);
         
         entityManager.getPlayer().setX(spawnX);
         entityManager.getPlayer().setY(spawnY);
