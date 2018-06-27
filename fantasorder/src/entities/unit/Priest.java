@@ -11,10 +11,11 @@ import states.State;
 import states.battlestates;
 
 public class Priest extends Unit{
+    
+    private HashMap<String, AudioPlayer> sfx;
     private Handler handler;
     private Animation anim_down,anim_up,anim_left,anim_right;
     
-<<<<<<< HEAD
     public Priest(Handler handler, float x,float y, int ket) {
         super(handler,x, y, Unit.width_semula, Unit.height_semula, ket);
         this.handler = handler;
@@ -24,28 +25,14 @@ public class Priest extends Unit{
         bounds.y = 20; //jarak dari pinggir grid player dri atas
         bounds.width = 38; //lebar collision detection box
         bounds.height = 44; //tinggi collision detection box
-=======
-    private HashMap<String, AudioPlayer> sfx;
-    
-    public Priest(Game game, float x,float y) {
-        super(x, y, Unit.width_semula, Unit.height_semula);
-        this.game = game;
->>>>>>> origin/sion
         
         anim_down = new Animation(500, Assets.priest_down);
         anim_up = new Animation(500, Assets.priest_up);
         anim_right = new Animation(500, Assets.priest_right);
         anim_left = new Animation(500, Assets.priest_left);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
         
         sfx = new HashMap<String, AudioPlayer>();
         sfx.put("walk", Assets.walk);
-=======
->>>>>>> origin/sion
->>>>>>> zam
->>>>>>> origin/sion
     }
     
     @Override
@@ -63,34 +50,20 @@ public class Priest extends Unit{
         
         xMove = 0;
         yMove = 0;
-        
-<<<<<<< HEAD
-        if(handler.getInput().atas){
-            yMove = -speed;
-        }
-        else if(handler.getInput().bawah){
-            yMove = speed;
-        }
-        else if(handler.getInput().kiri){
-            xMove = -speed;
-        }
-        else if(handler.getInput().kanan){
-=======
-        if(game.getInput().atas){
+        if(handler.getGame().getInput().atas){
             sfx.get("walk").play();
             yMove = -speed;
         }
-        else if(game.getInput().bawah){
+        else if(handler.getGame().getInput().bawah){
             sfx.get("walk").play();
             yMove = speed;
         }
-        else if(game.getInput().kiri){
+        else if(handler.getGame().getInput().kiri){
             sfx.get("walk").play();
             xMove = -speed;
         }
-        else if(game.getInput().kanan){
+        else if(handler.getGame().getInput().kanan){
             sfx.get("walk").play();
->>>>>>> origin/sion
             xMove = speed;
         }
         

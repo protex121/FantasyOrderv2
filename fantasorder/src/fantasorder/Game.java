@@ -25,10 +25,8 @@ public class Game implements Runnable{
     //Objek Panel
     public State gameState;
     public State menuState;
-<<<<<<< HEAD
-=======
     public State battlestate;
->>>>>>> origin/sion
+
     
     //Input
     private Input ip;
@@ -55,23 +53,12 @@ public class Game implements Runnable{
         display = new Display(title, width, height);
         display.getFrame().addKeyListener(ip);
         Assets.init();
-        
-<<<<<<< HEAD
         handler = new Handler(this);
         gameCamera = new GameCamera(handler,0,0);
 
         gameState = new GameState(handler,i); // this = class game karna parameter --> pindah ke dalam "PANEL" game
-=======
-<<<<<<< HEAD
-        gameState = new GameState(this,i); // this = class game karna parameter
-=======
-        gameCamera = new GameCamera(this,0,0);
-        
-        gameState = new GameState(this); // this = class game karna parameter
->>>>>>> zam
-        menuState = new MenuState(this);
-        battlestate = new battlestates(this);
->>>>>>> origin/sion
+        gameCamera = new GameCamera(handler,0,0);
+        //battlestate = new battlestates(this);
         
         State.setState(gameState);
     }
