@@ -16,7 +16,7 @@ public class Assets {
             board01,board02,board03,
             tent01,tent02,tent03,tent04,
             tent05,tent06,tent07,tent08,tent09,
-            redcrest01, redcrest02, knightstatue01, knightstatue02,
+            redcrest01, redcrest02, knightstatue,
             redroof01, redroof02, woodenroof01, woodenroof02, 
             hayroof01, hayroof02, walls01,walls02,
             greenroof01, greenroof02,
@@ -187,13 +187,13 @@ public class Assets {
         cgrass13 = sheet.crop(192,624,width,height);
         rigcliff01 = sheet.crop(192,144,width,height);
         rigcliff02 = sheet.crop(288,144,width,height);
-
         stair01 = sheet.crop(0,144,width,height);
         stair02 = sheet.crop(96,144,width, height);
         land01 = sheet.crop(0,432,width,height);
         land02 = sheet.crop(48,432,width,height);
         land03 = sheet.crop(0,480,width,height);
         land04 = sheet.crop(48,480,width,height);
+
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_A3.png"));
         walls01 = sheet.crop(0,96,width,height);
         walls02 = sheet.crop(0,144,width,height);
@@ -241,8 +241,7 @@ public class Assets {
         bigbroofli = sheet.crop(624,336,width,height);//menjorok kedalam
         bigbroofri = sheet.crop(576,336,width,height);//menjorok kedalam
         bigbroofw = sheet.crop(528,336,width,height);
-        knightstatue01 = sheet.crop(0,480,width,height);
-        knightstatue02 = sheet.crop(0,528,width,height);
+        knightstatue = sheet.crop(0,480,width,height*2);
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Outside_B.png"));
         tent01 = sheet.crop(384,480,width,height);
         tent02 = sheet.crop(384,528,width,height);

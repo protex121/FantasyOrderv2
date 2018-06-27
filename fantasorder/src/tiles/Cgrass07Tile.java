@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage;
 public class Cgrass07Tile extends Tile{
     
     public Cgrass07Tile(int id) {
-        super(Assets.stone05, id);
+        super(Assets.cgrass07, id);
     }
     
 }

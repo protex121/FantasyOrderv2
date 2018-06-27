@@ -43,7 +43,43 @@ public class Tile {
     public static Tile Cgrass13 = new Cgrass13Tile(34);
     public static Tile Rigcliff01 = new Rigcliff01Tile(35);
     public static Tile Rigcliff02 = new Rigcliff02Tile(36);
-    
+    public static Tile Stair01 = new Stair01Tile(37);
+    public static Tile Stair02 = new Stair02Tile(38);
+    public static Tile Land01 = new Land01Tile(39);
+    public static Tile Land02 = new Land02Tile(40);
+    public static Tile Land03 = new Land03Tile(41);
+    public static Tile Land04 = new Land04Tile(42);
+    public static Tile Walls01 = new Walls01Tile(43);
+    public static Tile Walls02 = new Walls02Tile(44);
+    public static Tile Walls03 = new Walls03Tile(45);
+    public static Tile Walls04 = new Walls04Tile(46);
+    public static Tile Woodenall01 = new Woodenwall01Tile(47);
+    public static Tile Woodenall02 = new Woodenwall02Tile(48);
+    public static Tile Woodenall03 = new Woodenwall03Tile(49);
+    public static Tile Woodenall04 = new Woodenwall04Tile(50);
+    public static Tile Woodenall05 = new Woodenwall05Tile(51);
+    public static Tile Woodenall06 = new Woodenwall06Tile(52);
+    public static Tile Woodwalls01 = new Woodwalls01Tile(53);
+    public static Tile Woodwalls02 = new Woodwalls02Tile(54);
+    public static Tile Woodwalls03 = new Woodwalls03Tile(55);
+    public static Tile Woodwalls04 = new Woodwalls04Tile(56);
+    public static Tile Woodwalls05 = new Woodwalls05Tile(57);
+    public static Tile Woodwalls06 = new Woodwalls06Tile(58);
+    public static Tile Woodswall01 = new Woodswall01Tile(59);
+    public static Tile Woodswall02 = new Woodswall02Tile(60);
+    public static Tile Woodswall03 = new Woodswall03Tile(61);
+    public static Tile Woodswall04 = new Woodswall04Tile(62);
+    public static Tile Woodswall05 = new Woodswall05Tile(63);
+    public static Tile Woodswall06 = new Woodswall06Tile(64);
+    public static Tile Hayroof01 = new Hayroof01Tile(65);
+    public static Tile Hayroof02 = new Hayroof02Tile(66);
+    public static Tile Woodenroof01 = new Woodenroof01Tile(67);
+    public static Tile Woodenroof02 = new Woodenroof02Tile(68);
+    public static Tile Redroof01 = new Redroof01Tile(69);
+    public static Tile Redroof02 = new Redroof02Tile(70);
+    public static Tile Greenroof01 = new Greenroof01Tile(71);
+    public static Tile Greenroof02 = new Greenroof02Tile(72);
+   
     
     public static final int tilewidth = 64,tileheight = 64;
     
