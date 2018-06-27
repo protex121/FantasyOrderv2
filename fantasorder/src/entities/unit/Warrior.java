@@ -10,6 +10,10 @@ import java.util.HashMap;
 
 public class Warrior extends Unit{
 
+<<<<<<< HEAD
+    public Warrior(Game game, float x,float y) {
+        super(game, x, y, Unit.width_semula, Unit.height_semula);
+=======
     private Game game;
     private Animation anim_down,anim_up,anim_left,anim_right;
     private HashMap<String, AudioPlayer> sfx;
@@ -22,9 +26,13 @@ public class Warrior extends Unit{
         anim_up = new Animation(500, Assets.warrior_up);
         anim_right = new Animation(500, Assets.warrior_right);
         anim_left = new Animation(500, Assets.warrior_left);
+<<<<<<< HEAD
         
         sfx = new HashMap<String, AudioPlayer>();
         sfx.put("walk", Assets.walk);
+=======
+>>>>>>> origin/sion
+>>>>>>> zam
     }
     
     @Override
@@ -35,11 +43,16 @@ public class Warrior extends Unit{
         anim_right.tick();
         getInput();
         move();
+        game.getGameCamera().centerOnEntity(this);
     }
 
     @Override
     public void render(Graphics g) {
+<<<<<<< HEAD
+        g.drawImage(Assets.player3, (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
+=======
         g.drawImage(getCurrAnimFrame(), (int)x, (int)y, width, height, null);
+>>>>>>> origin/sion
     }
     
     private void getInput(){

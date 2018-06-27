@@ -3,15 +3,15 @@ package tiles;
 import fantasorder.gfx.Assets;
 import java.awt.image.BufferedImage;
 
-public class RockTile extends Tile{
+public class Stone01Tile extends Tile{
     
-    public RockTile(int id) {
-        super(Assets.stone, id);
+    public Stone01Tile(int id) {
+        super(Assets.stone01, id);
     }
     
-    @Override
+    /*@Override
     public boolean isSolid(){
         return true;
-    }
+    }*/
     
 }

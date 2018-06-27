@@ -7,6 +7,17 @@ public class Tile {
 
     public static Tile[] tiles = new Tile[256];
     public static Tile grassTile = new GrassTile(0);
+    public static Tile Dirt01 = new Dirt01Tile(1);
+    public static Tile Dirt02 = new Dirt02Tile(2);
+    public static Tile Dirt03 = new Dirt03Tile(3);
+    public static Tile Dirt04 = new Dirt04Tile(4);
+    public static Tile Dirt05 = new Dirt05Tile(5);
+    public static Tile Dirt06 = new Dirt06Tile(6);
+    public static Tile Stone01 = new Stone01Tile(11);
+    public static Tile Stone02 = new Stone02Tile(12);
+    public static Tile Stone03 = new Stone03Tile(13);
+    public static Tile Stone04 = new Stone04Tile(14);
+    public static Tile Stone05 = new Stone05Tile(15);
     
     public static final int tilewidth = 64,tileheight = 64;
     

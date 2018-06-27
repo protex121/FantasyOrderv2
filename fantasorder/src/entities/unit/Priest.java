@@ -11,6 +11,11 @@ import states.State;
 import states.battlestates;
 
 public class Priest extends Unit{
+<<<<<<< HEAD
+    
+    public Priest(Game game, float x,float y) {
+        super(game, x, y, Unit.width_semula, Unit.height_semula);
+=======
 
     private Game game;
     private Animation anim_down,anim_up,anim_left,anim_right;
@@ -25,9 +30,13 @@ public class Priest extends Unit{
         anim_up = new Animation(500, Assets.priest_up);
         anim_right = new Animation(500, Assets.priest_right);
         anim_left = new Animation(500, Assets.priest_left);
+<<<<<<< HEAD
         
         sfx = new HashMap<String, AudioPlayer>();
         sfx.put("walk", Assets.walk);
+=======
+>>>>>>> origin/sion
+>>>>>>> zam
     }
     
     @Override
@@ -38,6 +47,7 @@ public class Priest extends Unit{
         anim_right.tick();
         getInput();
         move();
+        game.getGameCamera().centerOnEntity(this);
     }
     
     private void getInput(){
@@ -66,6 +76,9 @@ public class Priest extends Unit{
 
     @Override
     public void render(Graphics g) {
+<<<<<<< HEAD
+        g.drawImage(Assets.player2, (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
+=======
         g.drawImage(getCurrAnimFrame(), (int)x, (int)y, width, height, null);
     }
     
@@ -82,6 +95,7 @@ public class Priest extends Unit{
         else{
             return anim_down.getCurrFrame();
         }
+>>>>>>> origin/sion
     }
     
 }

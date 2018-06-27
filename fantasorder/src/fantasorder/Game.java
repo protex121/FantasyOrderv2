@@ -2,6 +2,7 @@ package fantasorder;
 
 import fantasorder.display.Display;
 import fantasorder.gfx.Assets;
+import fantasorder.gfx.GameCamera;
 import input.Input;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
@@ -13,7 +14,7 @@ import states.battlestates;
 public class Game implements Runnable{
     
     private Display display;
-    public int width, height;
+    private int width, height;
     public String title;
     private Thread thread;
     private boolean running = false;
@@ -29,6 +30,9 @@ public class Game implements Runnable{
     
     //Input
     private Input ip;
+    
+    //Camera
+    private GameCamera gameCamera;
     
     public Game(String title, int width, int height) {
         this.width = width;
@@ -47,7 +51,13 @@ public class Game implements Runnable{
         display.getFrame().addKeyListener(ip);
         Assets.init();
         
+<<<<<<< HEAD
         gameState = new GameState(this,i); // this = class game karna parameter
+=======
+        gameCamera = new GameCamera(this,0,0);
+        
+        gameState = new GameState(this); // this = class game karna parameter
+>>>>>>> zam
         menuState = new MenuState(this);
         battlestate = new battlestates(this);
         
@@ -78,11 +88,16 @@ public class Game implements Runnable{
             State.getState().render(g);    
         }
         
+<<<<<<< HEAD
+        //g.drawImage(Assets.stone01, 70, 10, null);
+        //g.drawImage(Assets.water09,120,10,null);
+=======
         //test case
         //g.drawImage(Assets.archer_left[0], 10, 10, null);
         //g.drawImage(Assets.archer_left[1], 50, 50, null);
         //g.drawImage(Assets.archer_left[2], 100, 100, null);
         
+>>>>>>> origin/sion
         //disini end nya
         bs.show();
         g.dispose();
@@ -126,6 +141,18 @@ public class Game implements Runnable{
     
     public Input getInput(){
         return ip;
+    }
+    
+    public GameCamera getGameCamera(){
+        return gameCamera;
+    }
+    
+    public int getWidth(){
+        return width;
+    }
+    
+    public int getHeight(){
+        return height;
     }
     
     public synchronized void start(){
