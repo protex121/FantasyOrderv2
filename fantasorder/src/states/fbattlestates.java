@@ -9,6 +9,7 @@ import fantasorder.Game;
 import fantasorder.gfx.Assets;
 import java.awt.Color;
 import java.awt.Graphics;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class fbattlestates extends javax.swing.JFrame {
@@ -45,6 +46,8 @@ public class fbattlestates extends javax.swing.JFrame {
         jLabel3.setText(Integer.toString(a.getDarah()));
         jLabel4.setText(Integer.toString(a.getMp()));
         
+        //lblplay.setIcon(new ImageIcon(Assets.archer_right[0]));
+        
     }
 
     private fbattlestates() {
@@ -66,7 +69,7 @@ public class fbattlestates extends javax.swing.JFrame {
         btnrun = new javax.swing.JButton();
         pb = new javax.swing.JProgressBar();
         lblenemy = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lblplay = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -130,10 +133,10 @@ public class fbattlestates extends javax.swing.JFrame {
         getContentPane().add(pb, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, 220, 40));
 
         lblenemy.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/enemy/Orc.png"))); // NOI18N
-        getContentPane().add(lblenemy, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 40, 270, 320));
+        getContentPane().add(lblenemy, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, 270, 320));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/textures/bgbattle.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 580));
+        lblplay.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/textures/bgbattle.png"))); // NOI18N
+        getContentPane().add(lblplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 580));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -147,6 +150,7 @@ public class fbattlestates extends javax.swing.JFrame {
             pb.setString(e.hp + "/" + e.max_hp);
             jLabel3.setText(Integer.toString(a.getDarah()));
             jLabel4.setText(Integer.toString(a.getMp()));
+            JOptionPane.showMessageDialog(null, "Skill : "+ a.skilln);
         }
         else{
             JOptionPane.showMessageDialog(null, "You Win!");
@@ -168,6 +172,7 @@ public class fbattlestates extends javax.swing.JFrame {
             pb.setString(e.hp + "/"+e.max_hp);
             jLabel3.setText(Integer.toString(a.getDarah()));
             jLabel4.setText(Integer.toString(a.getMp()));
+            JOptionPane.showMessageDialog(null, "Attack !");
         }
         else{
             JOptionPane.showMessageDialog(null, "You Win!");
@@ -175,6 +180,7 @@ public class fbattlestates extends javax.swing.JFrame {
             this.setVisible(false);
             this.dispose();
         }
+        
     }//GEN-LAST:event_btnatkActionPerformed
     
     //charge MP
@@ -225,12 +231,12 @@ public class fbattlestates extends javax.swing.JFrame {
     private javax.swing.JButton btnrun;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel lblenemy;
+    private javax.swing.JLabel lblplay;
     private javax.swing.JProgressBar pb;
     // End of variables declaration//GEN-END:variables
 }

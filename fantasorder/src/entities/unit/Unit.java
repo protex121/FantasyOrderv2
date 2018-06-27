@@ -18,7 +18,7 @@ public abstract class Unit extends Entity{
     public static final int height_semula = 64;
     
     protected int darah,mp,def,attack,skill;
-    protected String skilln;
+    public String skilln;
     protected float speed;
     protected float xMove,yMove;
     
@@ -30,7 +30,7 @@ public abstract class Unit extends Entity{
         this.def = def_semula;
         this.attack = atk_semula;
         this.skill=skill_semula;
-        this.skilln=nama_skill_semula;
+        this.skilln = nama_skill_semula;
         
         this.xMove = 0;
         this.yMove = 0;

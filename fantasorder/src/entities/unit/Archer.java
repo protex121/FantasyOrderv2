@@ -13,8 +13,6 @@ public class Archer extends Unit{
     private Animation anim_down,anim_up,anim_left,anim_right;
     private Game game;
     
-    
-    
     private HashMap<String,AudioPlayer> sfx;
     
     
