@@ -159,6 +159,37 @@ public class Tile {
     public static Tile Woodh = new WoodhTile(159);
     public static Tile Tilestone1 = new Tilestone1Tile(160);
     public static Tile Tilestone2 = new Tilestone2Tile(161);
+    public static Tile Windownoc = new WindownocTile(162);
+    public static Tile Windowwc = new WindowwcTile(163);
+    public static Tile Tallwindownoc = new TallwindownocTile(164);
+    public static Tile Tallwindowwc = new TallwindowwcTile(165);
+    public static Tile Cabinet = new CabinetTile(166);
+    public static Tile Cabinetw = new CabinetwTile(167);
+    public static Tile Cabinetf = new CabinetfTile(168);
+    public static Tile Cabinett = new CabinettTile(169);
+    public static Tile Cabinets = new CabinetsTile(170);
+    public static Tile Cabinetb = new CabinetbTile(171);
+    public static Tile Bed01 = new Bed01Tile(172);
+    public static Tile Bed02 = new Bed02Tile(173);
+    public static Tile Tablec = new TablecTile(174);
+    public static Tile Tabler = new TablerTile(175);
+    public static Tile Chairc = new ChaircTile(176);
+    public static Tile Chairr = new ChairrTile(177);
+    public static Tile Kstove = new KstoveTile(178);
+    public static Tile Ksink = new KsinkTile(179);
+    public static Tile Ktable1 = new Ktable1Tile(180);
+    public static Tile Ktable2 = new Ktable2Tile(181);
+    public static Tile Bbtable = new BbtableTile(182);
+    public static Tile Btable = new BtableTile(183);
+    public static Tile Wtable = new WtableTile(184);
+    public static Tile Chimney01 = new Chimney01Tile(185);
+    public static Tile Chimney02 = new Chimney02Tile(186);
+    public static Tile Mirror = new MirrorTile(187);
+    public static Tile Closedpot = new ClosedpotTile(188);
+    public static Tile Boxsmall = new BoxsmallTile(189);
+    public static Tile Boxstack = new BoxstackTile(190);
+    public static Tile Boxcarrot = new BoxcarrotTile(191);
+    public static Tile Sack = new SackTile(192);
 
     
     public static final int tilewidth = 64,tileheight = 64;
