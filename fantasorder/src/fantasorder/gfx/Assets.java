@@ -48,9 +48,9 @@ public class Assets {
             stonewall01,stonewall02,stonewall03,stonewall04,stonewall05,logwall, 
             woodwalla01,woodwalla02,woodwalla03,woodwalla04,woodwalla05,woodwalla06,woodwalla07,woodwalla08,
             woodwallb01,woodwallb02,woodwallb03,woodwallb04,woodwallc01,woodwallc02,woodwallc03,woodwallc04,
-            wallpfill, wallpcorl, wallpcorr, wallicorr,wallicorl,
+            wallpfill, wallpcorl, wallpcorr,wallifill, wallicorr,wallicorl,
             brickwall01,brickwall02,brickwall03,brickwall04,
-            walll01,walll02,walll03,walll04,
+            walll01,walll02,walll03,walll04,walll05,walll06,
             
             black, woodv, woodh, tilered, tilestone1, tilestone2,
             teapot, beer, wine, paper, grassbox, flowerpot,
@@ -336,6 +336,7 @@ public class Assets {
         wallpfill = sheet.crop(144,480,width,height);
         wallpcorl = sheet.crop(96,576,width,height);
         wallpcorr = sheet.crop(144,576,width,height);
+        wallifill = sheet.crop(240,480,width,height);
         wallicorl = sheet.crop(192,576,width,height);
         wallicorr = sheet.crop(240,576,width,height);
         brickwall01 = sheet.crop(96,624,width,height);
@@ -346,6 +347,8 @@ public class Assets {
         walll02 = sheet.crop(240,624,width,height);
         walll03 = sheet.crop(192,672,width,height);
         walll04 = sheet.crop(240,672,width,height);
+        walll05 = sheet.crop(192,648,width,height);
+        walll06 = sheet.crop(240,648,width,height);
         
         sheet = new SpriteSheet(ImageLoader.loadImage("/image/textures/Inside_A5.png"));
         black = sheet.crop(0,0,width,height);
