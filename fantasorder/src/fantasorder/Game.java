@@ -86,8 +86,27 @@ public class Game implements Runnable{
             State.getState().render(g);    
         }
         //test case
+<<<<<<< HEAD
         
         //g.drawImage(Assets.redcrest, 10, 10, null);
+=======
+/*        
+        g.drawImage(Assets.cgrass01, 0, 0, null);
+        g.drawImage(Assets.cgrass02, 0, 48, null);
+        g.drawImage(Assets.cgrass03, 0, 96, null);
+        g.drawImage(Assets.cgrass04, 48, 0, null);
+        g.drawImage(Assets.cgrass05, 48, 48, null);
+        g.drawImage(Assets.cgrass06, 48, 96, null);
+        g.drawImage(Assets.cgrass07, 96, 0, null);
+        g.drawImage(Assets.cgrass08, 96, 48, null);
+        g.drawImage(Assets.cgrass09, 96, 96, null);
+*/        
+        g.drawImage(Assets.vinesa01, 48, 96, null);
+        g.drawImage(Assets.vinesa02, 48, 144, null);
+
+
+        //g.drawImage(Assets.priest_down[2], 10, 10, null);
+>>>>>>> origin/alvin
         //g.drawImage(Assets.archer_left[1], 50, 50, null);
         //g.drawImage(Assets.archer_left[2], 100, 100, null);
         
